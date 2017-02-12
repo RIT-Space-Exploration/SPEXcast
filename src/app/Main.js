@@ -11,12 +11,22 @@ import getMuiTheme from 'material-ui/styles/getMuiTheme';
 import MuiThemeProvider from 'material-ui/styles/MuiThemeProvider';
 import Slider from 'material-ui/Slider';
 import {Card, CardActions, CardHeader, CardMedia, CardTitle, CardText} from 'material-ui/Card';
-
+import AppBar from 'material-ui/AppBar';
+import {GridList, GridTile} from 'material-ui/GridList';
+import IconButton from 'material-ui/IconButton';
+import Subheader from 'material-ui/Subheader';
+import StarBorder from 'material-ui/svg-icons/toggle/star-border';
+import SPEXHeader from './SPEXHeader.js';
 const styles = {
   container: {
     textAlign: 'center',
-    paddingTop: 200,
   },
+  gridList: {
+     width: 500,
+     height: 650,
+     margin: 'auto',
+     overflowY: 'auto',
+   },
 };
 
 const muiTheme = getMuiTheme({
@@ -86,34 +96,29 @@ class Main extends Component {
     }
 
   render() {
-    const standardActions = (
-      <FlatButton
-        label="Ok"
-        primary={true}
-        onTouchTap={this.handleRequestClose}
-      />
-    );
-
     return (
       <MuiThemeProvider muiTheme={muiTheme}>
-        <div style={styles.container}>
-          <h1>SPEXcast Soundboard</h1>
-          <h2>Dank Memes</h2>
+         <div style={styles.container}>
+           <SPEXHeader />
           <div>
-            {audioFiles.map(soundbite => (
-
-                <Card onTouchTap={() => {this.handlePlayAudio(soundbite.fileName)}}>
-                  <CardTitle title={soundbite.name}/>
-                  <CardText>
-                    {soundbite.description}
-                  </CardText>
-                  <CardActions>
-                    <FlatButton label="download" />
-                  </CardActions>
-                </Card>
-            ))}
+            <GridList
+              cellHeight={250}
+              style={styles.gridList}
+            >
+              <Subheader>December</Subheader>
+              {audioFiles.map((soundbite) => (
+                <GridTile
+                  key={soundbite.fileName}
+                  title={soundbite.name}
+                  subtitle={soundbite.description}
+                  actionIcon={<IconButton><StarBorder color="white" /></IconButton>}
+                  onTouchTap={() => {this.handlePlayAudio(soundbite.fileName)}}
+                >
+                <img src={'img/spexcast.png'} />
+                </GridTile>
+              ))}
+            </GridList>
           </div>
-
         </div>
       </MuiThemeProvider>
     );
