@@ -17,6 +17,7 @@ import IconButton from 'material-ui/IconButton';
 import Subheader from 'material-ui/Subheader';
 import StarBorder from 'material-ui/svg-icons/toggle/star-border';
 import SPEXHeader from './SPEXHeader.js';
+import audioFiles from './AudioFiles.js';
 const styles = {
   container: {
     textAlign: 'center',
@@ -35,28 +36,7 @@ const muiTheme = getMuiTheme({
   },
 });
 
-const audioFiles = [
-  {
-    name: 'Sigh',
-    fileName: 'sigh.mp3',
-    description: 'T.J. is not thrilled trying to describe SLS'
-  },
-  {
-    name: 'It\'s Hard!',
-    fileName: 'its_hard.mp3',
-    description: 'It is really hard to be positive of SLS'
-  },
-  {
-    name: 'Completely Shit on SLS',
-    fileName: 'sls.mp3',
-    description: 'Completely shitting on SLS'
-  },
-  {
-    name: 'So Ladies...',
-    fileName: 'so_ladies.mp3',
-    description: 'Space Seduction'
-  }
-];
+
 let audioTags = [];
 
 const setupAudioTags = () => {
