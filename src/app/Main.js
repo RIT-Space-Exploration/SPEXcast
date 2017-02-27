@@ -16,18 +16,27 @@ import {GridList, GridTile} from 'material-ui/GridList';
 import IconButton from 'material-ui/IconButton';
 import Subheader from 'material-ui/Subheader';
 import StarBorder from 'material-ui/svg-icons/toggle/star-border';
+import FileDownload from 'material-ui/svg-icons/file/file-download';
 import SPEXHeader from './SPEXHeader.js';
 import audioFiles from './AudioFiles.js';
+
 const styles = {
   container: {
+    display: 'flex',
+    flexWrap: 'wrap',
+    justifyContent: 'space-around',
     textAlign: 'center',
   },
   gridList: {
-     width: 500,
-     height: 650,
-     margin: 'auto',
      overflowY: 'auto',
+     margin: 'auto',
+     maxWidth: '90%',
    },
+   gridTile: {
+     width: 250,
+     height: 250,
+     margin: '5em'
+   }
 };
 
 const muiTheme = getMuiTheme({
@@ -65,33 +74,62 @@ class Main extends Component {
     };
   }
 
+  updateDimensions = () =>{
+        this.setState({
+          width: window.innerWidth || document.body.clientWidth,
+          height: window.innerHeight || document.body.clientHeight,
+        });
+    };
+    updateColumnCount = () => {
+      const { width } = this.state;
+      this.setState({
+        columnCount: width / 250
+      });
+    };
+    componentWillMount = () => {
+        this.updateDimensions();
+        this.updateColumnCount();
+    };
+    componentDidMount = () =>{
+        window.addEventListener("resize", this.updateDimensions);
+    };
+    componentWillUnmount = () =>{
+        window.removeEventListener("resize", this.updateDimensions);
+    };
+
   handlePlayAudio = (fileName) => {
     console.log(fileName);
     const audioIndex = audioTags.findIndex((tag) => {
       return tag.currentSrc === `${tag.baseURI}audio/${fileName}`;
     })
     audioTags[audioIndex].currentTime = 0.01;
-    audioTags[audioIndex].volume =1.000;
+    audioTags[audioIndex].volume = 1.000;
     audioTags[audioIndex].play();
     }
 
   render() {
+    const { columnCount } = this.state;
     return (
       <MuiThemeProvider muiTheme={muiTheme}>
          <div style={styles.container}>
            <SPEXHeader />
-          <div>
-            <GridList
+           <GridList
               cellHeight={250}
               style={styles.gridList}
+              cols={columnCount}
             >
-              <Subheader>December</Subheader>
+              <Subheader>Click below to play</Subheader>
               {audioFiles.map((soundbite) => (
                 <GridTile
                   key={soundbite.fileName}
                   title={soundbite.name}
                   subtitle={soundbite.description}
-                  actionIcon={<IconButton><StarBorder color="white" /></IconButton>}
+                  actionIcon={
+                    <IconButton
+                    href={`audio/${soundbite.fileName}`}>
+                      <FileDownload
+                       color="white"/>
+                       </IconButton>}
                   onTouchTap={() => {this.handlePlayAudio(soundbite.fileName)}}
                 >
                 <img src={'img/spexcast.png'} />
@@ -99,7 +137,6 @@ class Main extends Component {
               ))}
             </GridList>
           </div>
-        </div>
       </MuiThemeProvider>
     );
   }
