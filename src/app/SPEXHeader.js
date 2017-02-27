@@ -1,4 +1,5 @@
 import React, {Component} from 'react';
+import { Link } from 'react-router'
 import {deepOrange500} from 'material-ui/styles/colors';
 import getMuiTheme from 'material-ui/styles/getMuiTheme';
 import MuiThemeProvider from 'material-ui/styles/MuiThemeProvider';
@@ -30,8 +31,9 @@ class SPEXHeader extends Component {
     });
   }
 
-  handleMenuItemTouch() {
+  handleMenuItemTouch(event) {
     console.log('Menu Item Touched');
+    console.log(event);
   }
 
   render() {
@@ -49,27 +51,32 @@ class SPEXHeader extends Component {
         onRequestChange={(open) => this.setState({open})}>
         <MenuItem
           rightIcon={<Home/>}
-          onTouchTap={this.handleMenuItemTouch.bind(this)}>
+          onTouchTap={this.handleMenuItemTouch.bind(this)}
+          containerElement={<Link to="/home" />}>
           Home
         </MenuItem>
         <MenuItem
           rightIcon={<Headset/>}
-          onTouchTap={this.handleMenuItemTouch.bind(this)}>
+          onTouchTap={this.handleMenuItemTouch.bind(this)}
+          containerElement={<Link to="/episodes" />}>
           Episodes
         </MenuItem>
         <MenuItem
           rightIcon={<People/>}
-          onTouchTap={this.handleMenuItemTouch.bind(this)}>
+          onTouchTap={this.handleMenuItemTouch.bind(this)}
+          containerElement={<Link to="/about" />}>
           About Us
         </MenuItem>
         <MenuItem
           rightIcon={<Toys/>}
-          onTouchTap={this.handleMenuItemTouch.bind(this)}>
+          onTouchTap={this.handleMenuItemTouch.bind(this)}
+          containerElement={<Link to="/soundboard" />}>
           Soundboard
         </MenuItem>
         <MenuItem
           rightIcon={<OpenInNew/>}
-          onTouchTap={this.handleMenuItemTouch.bind(this)}>
+          onTouchTap={this.handleMenuItemTouch.bind(this)}
+          href={'http://spex.rit.edu/'}>
           SPEX Website
         </MenuItem>
         </Drawer>
