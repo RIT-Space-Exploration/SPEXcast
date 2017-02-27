@@ -3,6 +3,8 @@ const path = require('path');
 const buildPath = path.resolve(__dirname, 'build');
 const nodeModulesPath = path.resolve(__dirname, 'node_modules');
 const TransferWebpackPlugin = require('transfer-webpack-plugin');
+const dotenv = require('dotenv');
+dotenv.load();
 
 const config = {
   // Entry points to the project
@@ -17,8 +19,8 @@ const config = {
     devtool: 'eval',
     hot: true, // Live-reload
     inline: true,
-    port: 3000, // Port Number
-    host: 'localhost', // Change to '0.0.0.0' for external facing server
+    port: process.env.PORT || 3000, // Port Number
+    host: process.env.WEBPACK_HOST, // Change to '0.0.0.0' for external facing server
   },
   devtool: 'eval',
   output: {
