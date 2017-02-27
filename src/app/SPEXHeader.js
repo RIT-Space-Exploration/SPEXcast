@@ -5,6 +5,11 @@ import MuiThemeProvider from 'material-ui/styles/MuiThemeProvider';
 import AppBar from 'material-ui/AppBar';
 import Drawer from 'material-ui/Drawer';
 import MenuItem from 'material-ui/MenuItem';
+import Headset from 'material-ui/svg-icons/hardware/headset';
+import People from 'material-ui/svg-icons/social/people';
+import OpenInNew from 'material-ui/svg-icons/action/open-in-new';
+import Home from 'material-ui/svg-icons/action/home';
+import Toys from 'material-ui/svg-icons/hardware/toys';
 const muiTheme = getMuiTheme({
   palette: {
     accent1Color: deepOrange500,
@@ -25,6 +30,10 @@ class SPEXHeader extends Component {
     });
   }
 
+  handleMenuItemTouch() {
+    console.log('Menu Item Touched');
+  }
+
   render() {
     const { open } = this.state;
     return(
@@ -38,7 +47,31 @@ class SPEXHeader extends Component {
         docked={false}
         open={open}
         onRequestChange={(open) => this.setState({open})}>
-        <MenuItem>TEXT</MenuItem>
+        <MenuItem
+          rightIcon={<Home/>}
+          onTouchTap={this.handleMenuItemTouch.bind(this)}>
+          Home
+        </MenuItem>
+        <MenuItem
+          rightIcon={<Headset/>}
+          onTouchTap={this.handleMenuItemTouch.bind(this)}>
+          Episodes
+        </MenuItem>
+        <MenuItem
+          rightIcon={<People/>}
+          onTouchTap={this.handleMenuItemTouch.bind(this)}>
+          About Us
+        </MenuItem>
+        <MenuItem
+          rightIcon={<Toys/>}
+          onTouchTap={this.handleMenuItemTouch.bind(this)}>
+          Soundboard
+        </MenuItem>
+        <MenuItem
+          rightIcon={<OpenInNew/>}
+          onTouchTap={this.handleMenuItemTouch.bind(this)}>
+          SPEX Website
+        </MenuItem>
         </Drawer>
        </AppBar>
        
