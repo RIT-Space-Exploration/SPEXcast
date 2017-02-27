@@ -69,8 +69,9 @@ class Main extends Component {
     super(props, context);
 
     setupAudioTags();
-    this.state = {
-      open: false,
+     this.state = {
+      width: window.innerWidth || document.body.clientWidth,
+      height: window.innerHeight || document.body.clientHeight,
     };
   }
 
