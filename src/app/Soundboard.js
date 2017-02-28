@@ -46,6 +46,7 @@ const muiTheme = getMuiTheme({
 
 
 let audioTags = [];
+const baseURI = window.location.origin;
 
 const setupAudioTags = () => {
    audioTags = audioFiles.map(file => {
@@ -100,12 +101,12 @@ class Soundboard extends Component {
   handlePlayAudio = (fileName) => {
     console.log(fileName);
     const audioIndex = audioTags.findIndex((tag) => {
-      return tag.currentSrc === `${tag.baseURI}audio/${fileName}`;
+      return tag.currentSrc === `${baseURI}/audio/${fileName}`;
     })
     audioTags[audioIndex].currentTime = 0.01;
     audioTags[audioIndex].volume = 1.000;
     audioTags[audioIndex].play();
-    }
+  }
 
   render() {
     const { columnCount } = this.state;
