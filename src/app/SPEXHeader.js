@@ -14,6 +14,9 @@ import Toys from 'material-ui/svg-icons/hardware/toys';
 const muiTheme = getMuiTheme({
   palette: {
     accent1Color: deepOrange500,
+    primary1Color: deepOrange500,
+    primary2Color: deepOrange500,
+    primary3Color: deepOrange500,
   },
 });
 
@@ -41,7 +44,7 @@ class SPEXHeader extends Component {
     return(
       <MuiThemeProvider muiTheme={muiTheme}>
         <AppBar
-         title="SPEXcast Soundboard"
+         title="SPEXcast"
          iconClassNameRight="muidocs-icon-navigation-expand-more"
          onLeftIconButtonTouchTap={this.handleMenuTouch.bind(this)}
        >

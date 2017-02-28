@@ -18,25 +18,8 @@ import Subheader from 'material-ui/Subheader';
 import StarBorder from 'material-ui/svg-icons/toggle/star-border';
 import FileDownload from 'material-ui/svg-icons/file/file-download';
 import audioFiles from './AudioFiles.js';
+import Style from './Style.js';
 
-const styles = {
-  container: {
-    display: 'flex',
-    flexWrap: 'wrap',
-    justifyContent: 'space-around',
-    textAlign: 'center',
-  },
-  gridList: {
-     overflowY: 'auto',
-     margin: 'auto',
-     maxWidth: '90%',
-   },
-   gridTile: {
-     width: 250,
-     height: 250,
-     margin: '5em'
-   }
-};
 
 const muiTheme = getMuiTheme({
   palette: {
@@ -112,10 +95,10 @@ class Soundboard extends Component {
     const { columnCount } = this.state;
     return (
       <MuiThemeProvider muiTheme={muiTheme}>
-         <div style={styles.container}>
+         <div style={Style.container}>
            <GridList
               cellHeight={250}
-              style={styles.gridList}
+              style={Style.gridList}
               cols={columnCount}
             >
               <Subheader>Click below to play</Subheader>
