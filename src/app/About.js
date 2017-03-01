@@ -14,7 +14,7 @@ class About extends Component {
                 <h1>Meet the team</h1> <br/>
                 <h2>We are a group of passionate space fans from Rochester Institute of Technology</h2>
                 {Team.map((host)=> (
-                    <Card>
+                    <Card key={host.name}>
                         <CardHeader
                             title={host.name}
                             subtitle={host.catchphrase}

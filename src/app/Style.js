@@ -4,6 +4,8 @@ const Style = {
     //flexWrap: 'wrap',
     justifyContent: 'space-around',
     textAlign: 'center',
+    maxWidth: 1280,
+    margin: 'auto',
   },
   gridList: {
      overflowY: 'auto',
