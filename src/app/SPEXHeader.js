@@ -11,6 +11,7 @@ import People from 'material-ui/svg-icons/social/people';
 import OpenInNew from 'material-ui/svg-icons/action/open-in-new';
 import Home from 'material-ui/svg-icons/action/home';
 import Toys from 'material-ui/svg-icons/hardware/toys';
+import Style from './Style.js';
 const muiTheme = getMuiTheme({
   palette: {
     accent1Color: deepOrange500,
@@ -47,6 +48,7 @@ class SPEXHeader extends Component {
          title="SPEXcast"
          iconClassNameRight="muidocs-icon-navigation-expand-more"
          onLeftIconButtonTouchTap={this.handleMenuTouch.bind(this)}
+         style={Style.header}
        >
        <Drawer
         docked={false}

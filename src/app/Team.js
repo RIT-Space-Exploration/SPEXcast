@@ -2,9 +2,9 @@ const Team = [
     {
         name: 'T.J. Tarazevits',
         major: 'Game Design and Development',
-        imgFile: 'headshot.png',
-        catchphrase: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed condimentum, purus eros triste lacus, sit amet.',
-        bio: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla tempor neque purus, a egestas tortor tempor nec. Integer in nunc vitae leo tempor aliquet vitae ac justo. Donec quam justo, ultricies at metus vitae, ornare porttitor mi. Etiam malesuada finibus ultricies. Nunc in lectus id tellus tristique varius. Cras condimentum iaculis erat ut posuere. Vivamus vitae orci congue, pulvinar tortor eu, ultrices magna. Proin vel sem id erat finibus elementum. Cras velit ipsum, egestas id dui quis, sagittis iaculis lectus. Proin ullamcorper enim vitae nulla pretium efficitur. Vestibulum vulputate lacus ut velit faucibus placerat. Praesent nec nisl quis sapien viverra pharetra. Morbi id ullamcorper diam. Aliquam erat volutpat. Vivamus vel tincidunt turpis.',
+        imgFile: 'tjHeadshot.png',
+        catchphrase: 'Launch, land, and relaunch',
+        bio: 'I first discovered rocketry playing Kerbal Space Program as a high school freshman. That started me on a path of physics and programming, and to this podcast. I have followed the ins and outs of the space industry for years, and I am always excited to talk about the new developments in space technology we see every day.',
         favoriteSpacecraft: 'Falcon 9 v1.1 FT',
         spacecraftImg: 'rocket.png',
         specialization: 'Rocket Dynamics, Chemical Propulsion, Space Industry Business',
@@ -22,7 +22,7 @@ const Team = [
     {
         name: 'Drew Walters',
         major: 'Mechanical Engineering Technology (BS) Manufacturing & Mechanical Systems Integration',
-        imgFile: 'headshot.png',
+        imgFile: 'drewHeadshot.png',
         catchphrase: 'I am not morally opposed to this',
         bio: 'I\'m a fourth year BS/MS student here at RIT newly fascinated by space. My area of focus is additive manufacturing and how that can be applied to space systems. I am from Ithaca, NY and love to hacky sack',
         favoriteSpacecraft: 'Death Star',
@@ -32,7 +32,7 @@ const Team = [
     {
         name: 'Augie Allen',
         major: 'Biomedical Engineering BS',
-        imgFile: 'headshot.png',
+        imgFile: 'augieHeadshot.png',
         catchphrase: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed condimentum, purus eros triste lacus, sit amet.',
         bio: 'Biomedical Engineering alumni and aspiring interplanetary traveler. Currently living in Salt Lake City, Utah',
         favoriteSpacecraft: 'Crew Dragon',

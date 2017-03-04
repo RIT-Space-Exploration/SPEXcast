@@ -109,7 +109,8 @@ class Soundboard extends Component {
                   subtitle={soundbite.description}
                   actionIcon={
                     <IconButton
-                    href={`audio/${soundbite.fileName}`}>
+                    href={`audio/${soundbite.fileName}`}
+                    download>
                       <FileDownload
                        color="white"/>
                        </IconButton>}

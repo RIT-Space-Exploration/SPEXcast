@@ -19,6 +19,7 @@ class About extends Component {
                             title={host.name}
                             subtitle={host.catchphrase}
                             avatar={`img/${host.imgFile}`}
+                            style={Style.cardHeader}
                         />
                         <CardMedia
                             overlay={<CardTitle title={`Favorite Spacecraft: ${host.favoriteSpacecraft}`} subtitle={`Specializations: ${host.specialization}`} />}

@@ -16,6 +16,12 @@ const Style = {
      width: 250,
      height: 250,
      margin: '5em'
+   },
+   cardHeader: {
+     textAlign: 'left',
+   },
+   header: {
+     maxWidth: '100%'
    }
 };
 
