@@ -1,0 +1,607 @@
+<?xml version="1.0" encoding="utf-8"?>
+<rss xmlns:atom="http://www.w3.org/2005/Atom" xmlns:itunes="http://www.itunes.com/dtds/podcast-1.0.dtd" xmlns:itunesu="http://www.itunesu.com/feed" version="2.0">
+    <channel>
+        <link>http://spex.rit.edu/spexcast/</link>
+        <language>en-us</language>
+        <copyright>&#xA9; 2016</copyright>
+        <webMaster>spexcast@gmail.com (SPEXcast crew)</webMaster>
+        <managingEditor>spexcast@gmail.com (Philip Linden)</managingEditor>
+        <image>
+            <url>http://www.csh.rit.edu/~tj/SPEXcast_logo_2588x2588.png</url>
+            <title>SPEXcast</title>
+            <link>http://spex.rit.edu/spexcast/</link>
+        </image>
+        <itunes:owner>
+            <itunes:name>SPEXcast</itunes:name>
+            <itunes:email>spexcast@gmail.com</itunes:email>
+        </itunes:owner>
+        <itunes:category text="Science &amp; Medicine">
+            <itunes:category text="Natural Sciences" />
+        </itunes:category>
+		<itunes:category text="Education">
+			<itunes:category text="Higher Education" />
+		</itunes:category>
+        <itunes:keywords>space, astronomy, astrophotography, spacex, ula, nasa, rit, rochester, sls, engineering, spaceship, rocket</itunes:keywords>
+        <itunes:explicit>no</itunes:explicit>
+        <itunes:image href="http://www.csh.rit.edu/~tj/SPEXcast_logo_2588x2588.png" />
+        <atom:link href="http://www.csh.rit.edu/~tj/spexcast.xml" rel="self" type="application/rss+xml" />
+        <pubDate>Wed, 30 Mar 2016 14:00:00 EST</pubDate>
+        <title>SPEXcast</title>
+        <itunes:author>RIT Space Exploration</itunes:author>
+        <description>
+		</description>
+        <itunes:summary>SPEXcast is a weekly podcast diving into a variety of space topics. We are a group of Rochester Institute of Technology students that are excited about space and space exploration. Come with us as we discuss the cutting edge of spacecraft engineering, potential future missions to outer space, and exciting scientific discoveries in the field of astrophysics.</itunes:summary>
+        <itunes:subtitle>Your first stop for space discussions!</itunes:subtitle>
+        <lastBuildDate>Thu, 2 Mar 2017 12:00:00 EST</lastBuildDate>
+		<item>
+			<title>31b: Generation Ships</title>
+			<description>
+        In this special bonus episode, SPEXcast discusses the concept of generation ships. Barring extreme advances in space travel technology and our understanding of physics, it could take hundreds or thousands of years to send humans to other worlds. This would necessite self sustaining societies to exist on these vessels, acting as caretakers for the human race until they arrive at their new home. We discuss the moral implications of sending our successors off into space with no chance of seeing their final destination. </description>
+			<itunes:summary>
+        In this special bonus episode, SPEXcast discusses the concept of generation ships. Barring extreme advances in space travel technology and our understanding of physics, it could take hundreds or thousands of years to send humans to other worlds. This would necessite self sustaining societies to exist on these vessels, acting as caretakers for the human race until they arrive at their new home. We discuss the moral implications of sending our successors off into space with no chance of seeing their final destination.</itunes:summary>
+			<itunes:subtitle>SPEXcast discusses the ethics of multi-generational spaceships</itunes:subtitle>
+			<itunesu:category itunesu:code="109" />
+			<enclosure url="http://www.podtrac.com/pts/redirect.mp3/www.csh.rit.edu/~tj/SPEXcast_031b_GenerationShips.mp3" type="audio/mpeg" length="1" />
+			<guid>https://www.csh.rit.edu/~tj/SPEXcast_031b_GenerationShips.mp3</guid>
+			<itunes:duration>0:12:48</itunes:duration>
+			<pubDate>Thu, 2 Mar 2017 12:00:00 EST</pubDate>
+		</item>
+		<item>
+			<title>31a: Weekly News for 2-24-2017</title>
+			<description>
+        SPEXcast sits down to discuss the happenings in space for the week. We talk about SpaceX\'s CRS-10 mission, crew on SLS EM-1 and Citizen scientists. </description>
+			<itunes:summary>
+        SPEXcast sits down to discuss the happenings in space for the week. We talk about SpaceX\'s CRS-10 mission, crew on SLS EM-1 and Citizen scientists.
+ 			</itunes:summary>
+			<itunes:subtitle>SPEXcast discusses the new for 2-24-2017</itunes:subtitle>
+			<itunesu:category itunesu:code="109" />
+			<enclosure url="http://www.podtrac.com/pts/redirect.mp3/www.csh.rit.edu/~tj/SPEXcast_031a_WeeklyNews_2-24-17.mp3" type="audio/mpeg" length="1" />
+			<guid>https://www.csh.rit.edu/~tj/SPEXcast_031a_WeeklyNews_2-24-17.mp3</guid>
+			<itunes:duration>1:09:53</itunes:duration>
+			<pubDate>Thu, 2 Mar 2017 12:00:00 EST</pubDate>
+		</item>
+    <item>
+			<title>30: Meta Discussion on Spacecraft Construction and Design</title>
+			<description>
+        Science fiction is dominated by gigantic spaceships exploring the stars, however real life spacecraft appear to be made of smaller, discrete pieces. On the other hand, games like Kerbal Space Program present building rockets as simple as snapping together lego pieces. How much is science and how much is fiction?       </description>
+			<itunes:summary>
+        Science fiction is dominated by gigantic spaceships exploring the stars, however real life spacecraft appear to be made of smaller, discrete pieces. On the other hand, games like Kerbal Space Program present building rockets as simple as snapping together lego pieces. How much is science and how much is fiction?       </itunes:summary>
+			<itunes:subtitle>SPEXcast discusses how modern spacecraft design reflects our Science Fiction heritage and where it diverges once physics comes into play.</itunes:subtitle>
+			<itunesu:category itunesu:code="109" />
+			<enclosure url="http://www.podtrac.com/pts/redirect.mp3/www.csh.rit.edu/~tj/SPEXcast_030_SpacecraftArchitectures.mp3" type="audio/mpeg" length="1" />
+			<guid>https://www.csh.rit.edu/~tj/SPEXcast_030_SpacecraftArchitectures.mp3</guid>
+			<itunes:duration>0:38:50</itunes:duration>
+			<pubDate>Thu, 23 Feb 2017 11:45:00 EST</pubDate>
+		</item>
+    <item>
+			<title>29: 2016 Year in Review</title>
+			<description>
+        SPEXcast looks back on some of the successes and failures of 2016 and share their thoughts on what's to come in 2017
+      </description>
+			<itunes:summary>
+        SPEXcast looks back on some of the successes and failures of 2016 and share their thoughts on what's to come in 2017
+      </itunes:summary>
+			<itunes:subtitle>SPEXcast recaps the exciting events of 2016 and looks ahead to 2017</itunes:subtitle>
+			<itunesu:category itunesu:code="109" />
+			<enclosure url="http://www.podtrac.com/pts/redirect.mp3/www.csh.rit.edu/~tj/SPEXcast_029_2016inReview.mp3" type="audio/mpeg" length="1" />
+			<guid>https://www.csh.rit.edu/~tj/SPEXcast_029_2016inReview.mp3</guid>
+			<itunes:duration>0:56:01</itunes:duration>
+			<pubDate>Wed, 15 Feb 2017 18:00:00 EST</pubDate>
+		</item>
+    <item>
+			<title>Season 3 Promo</title>
+			<description>
+        No discussion this week, just a heads up on what's on the horizon for the podcast. Next week we'll be back for a full hour discussing 2016: Year in Review. What was your favorite space mission from 2016? Join the conversation on Twitter (@RITSPEX),  Facebook.com/RITSPEX, or email spexcast@gmail.com
+			</description>
+			<itunes:summary>
+        No discussion this week, just a heads up on what's on the horizon for the podcast. Next week we'll be back for a full hour discussing 2016: Year in Review. What was your favorite space mission from 2016? Join the conversation on Twitter (@RITSPEX),  Facebook.com/RITSPEX, or email spexcast@gmail.com
+			</itunes:summary>
+			<itunes:subtitle>SPEXcast will return next week for a full season of exciting space news!</itunes:subtitle>
+			<itunesu:category itunesu:code="109" />
+			<enclosure url="http://www.podtrac.com/pts/redirect.mp3/www.csh.rit.edu/~tj/SPEXcast_Season3Promo.mp3" type="audio/mpeg" length="1" />
+			<guid>https://www.csh.rit.edu/~tj/SPEXcast_Season3Promo.mp3</guid>
+			<itunes:duration>0:02:49</itunes:duration>
+			<pubDate>Wed, 08 Feb 2017 13:20:00 EST</pubDate>
+		</item>
+    <item>
+			<title>28: James Webb Space Telescope</title>
+			<description>
+        SPEXcast speaks with Matt Greenhouse, Project Scientist of the James Webb Space Telescope, about the observatory's objectives and the tech that makes it all possible. Many thanks to Sarah Schlieder and NASA Goddard Spaceflight Center for setting up this interview and others, and to Brendan Byrne (of WMFE Orlando and Are We There Yet?) for putting us in touch.
+			</description>
+			<itunes:summary>
+        SPEXcast speaks with Matt Greenhouse, Project Scientist of the James Webb Space Telescope, about the observatory's objectives and the tech that makes it all possible. Many thanks to Sarah Schlieder and NASA Goddard Spaceflight Center for setting up this interview and others, and to Brendan Byrne (of WMFE Orlando and Are We There Yet?) for putting us in touch.
+			</itunes:summary>
+			<itunes:subtitle>SPEXcast interviews NASA's Matt Greenhouse on JWST</itunes:subtitle>
+			<itunesu:category itunesu:code="109" />
+			<enclosure url="http://www.podtrac.com/pts/redirect.mp3/www.csh.rit.edu/~tj/SPEXcast_028_JWST.mp3" type="audio/mpeg" length="1" />
+			<guid>https://www.csh.rit.edu/~tj/SPEXcast_028_JWST.mp3</guid>
+			<itunes:duration>0:59:56</itunes:duration>
+			<pubDate>Wed, 01 Feb 2017 10:15:00 EST</pubDate>
+		</item>
+		<item>
+			<title>27: NASA Cubesats</title>
+			<description>
+			SPEXcast sits down with Pam Millar, Chief of the Laser Remote Sensing Lab at NASA GSFC to discuss cubesat applications and NASA programs involving nanosatellites.
+			</description>
+			<itunes:summary>
+			SPEXcast sits down with Pam Millar, Chief of the Laser Remote Sensing Lab at NASA GSFC to discuss cubesat applications and NASA programs involving nanosatellites.
+			</itunes:summary>
+			<itunes:subtitle>SPEXcast interviews NASA's Pam Millar on Cubesats</itunes:subtitle>
+			<itunesu:category itunesu:code="109" />
+			<enclosure url="http://www.podtrac.com/pts/redirect.mp3/www.csh.rit.edu/~tj/SPEXcast_027_NASAcubesats.mp3" type="audio/mpeg" length="1" />
+			<guid>http://www.csh.rit.edu/~tj/SPEXcast_027_NASAcubesats.mp3</guid>
+			<itunes:duration>0:43:50</itunes:duration>
+			<pubDate>Thu, 22 Dec 2016 20:15:00 PST</pubDate>
+		</item>
+		<item>
+			<title>26: Skywatch</title>
+			<description>
+			SPEXcast sits down with Dexter Jagula from Skywatch. Skywatch is an API(Application Programming Interface) for easily accessing datasets from Earth sensing satellites. Their goal is to make scientific data easily accessible to developers to fuel scientific and commercial research. Check out our new website at spex.rit.edu. Our intro music is provided by Nelson Scott http://thenelsonscott.com
+			</description>
+			<itunes:summary>
+			SPEXcast sits down with Dexter Jagula from Skywatch. Skywatch is an API(Application Programming Interface) for easily accessing datasets from Earth sensing satellites. Their goal is to make scientific data easily accessible to developers to fuel scientific and commercial research. Check out our new website at spex.rit.edu
+			</itunes:summary>
+			<itunes:subtitle>SPEXcast discusses Skywatch, a satellite data API with Dexter Jagula</itunes:subtitle>
+			<itunesu:category itunesu:code="109" />
+			<enclosure url="http://www.podtrac.com/pts/redirect.mp3/www.csh.rit.edu/~tj/SPEXcast_026_SkyWatch.mp3" type="audio/mpeg" length="1" />
+			<guid>http://www.csh.rit.edu/~tj/SPEXcast_026_SkyWatch.mp3</guid>
+			<itunes:duration>0:42:44</itunes:duration>
+			<pubDate>Wed, 30 Nov 2016 14:15:00 EST</pubDate>
+		</item>
+		<item>
+			<title>25: Solar Science &amp; STEREO</title>
+			<description>
+			SPEXcast speaks with Dr. Terry Kucera, an astrophysicist at NASA Goddard, about solar science and how NASA observes the Sun with spacecrafts like the Solar Terrestrial Relations Observatories (STEREO). Explore the Sun on your own (in real time!) with https://helioviewer.org/ and stay up to date with NASA's continued solar studies on Twitter @NASASunEarth and @NASAGoddard
+			</description>
+			<itunes:summary>
+			SPEXcast speaks with Dr. Terry Kucera, an astrophysicist at NASA Goddard, about solar science and how NASA observes the Sun with spacecrafts like the Solar Terrestrial Relations Observatories (STEREO). Explore the Sun on your own (in real time!) with https://helioviewer.org/ and stay up to date with NASA's continued solar studies on Twitter @NASASunEarth and @NASAGoddard
+			</itunes:summary>
+			<itunes:subtitle>SPEXcast discusses STEREO, a solar observation program with NASA Scientist Dr. Terry Kucera</itunes:subtitle>
+			<itunesu:category itunesu:code="109" />
+			<enclosure url="http://www.podtrac.com/pts/redirect.mp3/www.csh.rit.edu/~tj/SPEXcast_025_STEREO.mp3" type="audio/mpeg" length="1" />
+			<guid>http://www.csh.rit.edu/~tj/SPEXcast_025_STEREO.mp3</guid>
+			<itunes:duration>0:42:27</itunes:duration>
+			<pubDate>Wed, 23 Nov 2016 16:15:00 EST</pubDate>
+		</item>
+		<item>
+			<title>24: Open Source Hardware &amp; STEMN.com</title>
+			<description>
+			SPEXcast sits down with the Co-Founder of STEMN.com, a social network for engineers to collaborate and work on engineering challenges for the future
+
+
+			We also have new intro music courtesy of Nelson Scott. Check out his Soundcloud below!
+			http://soundcloud.com/thenelsonscott
+			</description>
+			<itunes:summary>
+			SPEXcast sits down with the Co-Founder of STEMN.com, a social network for engineers to collaborate and work on engineering challenges for the future
+
+
+			We also have new intro music courtesy of Nelson Scott. Check out his Soundcloud below!
+			http://soundcloud.com/thenelsonscott
+			</itunes:summary>
+			<itunes:subtitle>SPEXcast discusses STEMN</itunes:subtitle>
+			<itunesu:category itunesu:code="109" />
+			<enclosure url="http://www.podtrac.com/pts/redirect.mp3/www.csh.rit.edu/~tj/SPEXcast_024_STEMN.mp3" type="audio/mpeg" length="1" />
+			<guid>http://www.csh.rit.edu/~tj/SPEXcast_024_STEMN.mp3</guid>
+			<itunes:duration>0:53:13</itunes:duration>
+			<pubDate>Wed, 9 Nov 2016 16:15:00 EST</pubDate>
+		</item>
+		<item>
+			<title>23: Orion with Dustin Neill</title>
+			<description>
+			SPEXcast sits down with Dustin Neill, an engineer at Lockheed Martin working on the Orion Crew Capsule. We discuss the Descent and Landing subsystem as well as the general capabilities and future missions for the Orion capsule.
+			https://www.nasa.gov/exploration/systems/orion/index.html
+
+			We also have new intro music courtesy of Nelson Scott. Check out his Soundcloud below!
+			http://soundcloud.com/thenelsonscott
+			</description>
+			<itunes:summary>
+			SPEXcast sits down with Dustin Neill, an engineer at Lockheed Martin working on the Orion Crew Capsule. We discuss the Descent and Landing subsystem as well as the general capabilities and future missions for the Orion capsule.
+			https://www.nasa.gov/exploration/systems/orion/index.html
+
+			We also have new intro music courtesy of Nelson Scott. Check out his Soundcloud below!
+			http://soundcloud.com/thenelsonscott
+			</itunes:summary>
+			<itunes:subtitle>SPEXcast discusses the Orion capsule with Dustin Neill</itunes:subtitle>
+			<itunesu:category itunesu:code="109" />
+			<enclosure url="http://www.podtrac.com/pts/redirect.mp3/www.csh.rit.edu/~tj/SPEXcast_023_Orion-withDustinNeill.mp3" type="audio/mpeg" length="1" />
+			<guid>http://www.csh.rit.edu/~tj/SPEXcast_023_Orion-withDustinNeill.mp3</guid>
+			<itunes:duration>0:35:21</itunes:duration>
+			<pubDate>Fri, 21 Oct 2016 16:15:00 EST</pubDate>
+		</item>
+		<item>
+			<title>22: SpaceX Interplanetary Transport System</title>
+			<description>
+			SPEXcast sits down to discuss SpaceX's big announcement from IAC, the Interplanetary Transport System. We break down the key points as well as highlight the challenges facing the colossal project. We also propose a few questions we still have after the announcement.
+			X-33/VentureStar-What really Happened?
+			https://www.nasaspaceflight.com/2006/01/x-33venturestar-what-really-happened/
+
+			Boeing CEO Vows to Beat Musk to Mars		https://www.bloomberg.com/news/articles/2016-10-04/boeing-ceo-vows-to-beat-musk-to-mars-as-new-space-race-beckons
+			</description>
+			<itunes:summary>
+			SPEXcast sits down to discuss SpaceX's big announcement from IAC, the Interplanetary Transport System. We break down the key points as well as highlight the challenges facing the colossal project. We also propose a few questions we still have after the announcement.
+			X-33/VentureStar-What really Happened?
+			https://www.nasaspaceflight.com/2006/01/x-33venturestar-what-really-happened/
+
+			Boeing CEO Vows to Beat Musk to Mars		https://www.bloomberg.com/news/articles/2016-10-04/boeing-ceo-vows-to-beat-musk-to-mars-as-new-space-race-beckons
+			</itunes:summary>
+			<itunes:subtitle>SPEXcast sits down to discuss the outcomes of ITS</itunes:subtitle>
+			<itunesu:category itunesu:code="109" />
+			<enclosure url="http://www.podtrac.com/pts/redirect.mp3/www.csh.rit.edu/~tj/SPEXcast_022_IAC2016post.mp3" type="audio/mpeg" length="1" />
+			<guid>http://www.csh.rit.edu/~tj/SPEXcast_022_IAC2016post.mp3</guid>
+			<itunes:duration>1:09:03</itunes:duration>
+			<pubDate>Wed, 12 Oct 2016 10:15:00 EST</pubDate>
+		</item>
+		<item>
+			<title>21: Pre IAC Predications</title>
+			<description>
+			SpaceX and Elon Musk are announcing the details for their Mars rocket next week at the International Astronautical Congress. SPEXcast sits down to discuss the potential mission plan and challenges such a mission will endure. We also make our best prediction as to what exactly will be announced on Tuesday. Stay tuned for a post-announcement reaction episode!
+			</description>
+			<itunes:summary>
+			SpaceX and Elon Musk are announcing the details for their Mars rocket next week at the International Astronautical Congress. SPEXcast sits down to discuss the potential mission plan and challenges such a mission will endure. We also make our best prediction as to what exactly will be announced on Tuesday. Stay tuned for a post-announcement reaction episode!
+			</itunes:summary>
+			<itunes:subtitle>SPEXcast sits down to discuss their predications for the SpaceX Mars plan at the International Astronautical Congress</itunes:subtitle>
+			<itunesu:category itunesu:code="109" />
+			<enclosure url="http://www.podtrac.com/pts/redirect.mp3/www.csh.rit.edu/~tj/SPEXcast_021_IAC2016pre.mp3" type="audio/mpeg" length="1" />
+			<guid>http://www.csh.rit.edu/~tj/SPEXcast_021_IAC2016pre.mp3</guid>
+			<itunes:duration>0:50:30</itunes:duration>
+			<pubDate>Sat, 24 Sep 2016 16:15:00 EST</pubDate>
+		</item>
+		<item>
+			<title>Space From The Ground Up: Why We Explore</title>
+			<description>
+			Every few years, humans lob another multi-million dollar craft into space without any hope of returning to Earth. Why do we even bother?
+			</description>
+			<itunes:summary>
+			Every few years, humans lob another multi-million dollar craft into space without any hope of returning to Earth. Why do we even bother?
+			</itunes:summary>
+			<itunes:subtitle>Space From The Ground Up is a new miniseries by SPEXcast </itunes:subtitle>
+			<itunesu:category itunesu:code="109" />
+			<enclosure url="http://www.podtrac.com/pts/redirect.mp3/www.csh.rit.edu/~tj/SGU_001_WhyWeExplore.mp3" type="audio/mpeg" length="1" />
+			<guid>http://www.csh.rit.edu/~tj/SGU_001_WhyWeExplore.mp3</guid>
+			<itunes:duration>0:07:03</itunes:duration>
+			<pubDate>Thu, 15 Sep 2016 16:15:00 EST</pubDate>
+		</item>
+		<item>
+			<title>20: Tory Bruno</title>
+			<description>
+			SPEXcast sits down the the CEO of United Launch Alliance, Tory Bruno, to talk about the future of ULA, its next generation launch vehicle Vulcan, with its ACES upper stage, and the future of humans in space.
+			</description>
+			<itunes:summary>
+			SPEXcast sits down the the CEO of United Launch Alliance, Tory Bruno, to talk about the future of ULA, its next generation launch vehicle Vulcan, with its ACES upper stage, and the future of humans in space.
+			</itunes:summary>
+			<itunes:subtitle>SPEXcast sat down to interview Tory Bruno, CEO of United Launch Alliance </itunes:subtitle>
+			<itunesu:category itunesu:code="109" />
+			<enclosure url="http://www.podtrac.com/pts/redirect.mp3/www.csh.rit.edu/~tj/SPEXcast_020_ToryBruno.mp3" type="audio/mpeg" length="1" />
+			<guid>http://www.csh.rit.edu/~tj/SPEXcast_020_ToryBruno.mp3</guid>
+			<itunes:duration>0:57:11</itunes:duration>
+			<pubDate>Wed, 07 Sep 2016 10:05:00 EST</pubDate>
+		</item>
+		<item>
+			<title>19: Commander Chris Hadfield</title>
+			<description>
+			Phil, TJ, Augie, Drew, and Chris had the opportunity to speak with Canadian astronaut, pilot and engineer Commander Chris Hadfield about his experiences in space, and asked him a few questions about the past, present, and future of space exploration. A transcript of this episode is available here \\n http://www.csh.rit.edu/~tj/chrisHadfieldInterviewTranscript.txt
+			</description>
+			<itunes:summary>
+			Phil, TJ, Augie, Drew, and Chris had the opportunity to speak with Canadian astronaut, pilot and engineer Commander Chris Hadfield about his experiences in space, and asked him a few questions about the past, present, and future of space exploration.  A transcript of this episode is available here \\n http://www.csh.rit.edu/~tj/chrisHadfieldInterviewTranscript.txt
+			</itunes:summary>
+			<itunes:subtitle>Phil, TJ, Drew, Chris P., and Augie sat down to interview Commander Chris Hadfield </itunes:subtitle>
+			<itunesu:category itunesu:code="109" />
+			<enclosure url="http://www.podtrac.com/pts/redirect.mp3/www.csh.rit.edu/~tj/SPEXcast_019_ChrisHadfield.mp3" type="audio/mpeg" length="1" />
+			<guid>http://www.csh.rit.edu/~tj/SPEXcast_019_ChrisHadfield.mp3</guid>
+			<itunes:duration>0:26:26</itunes:duration>
+			<pubDate>Wed, 24 Aug 2016 10:05:00 EST</pubDate>
+		</item>
+		<item>
+			<title>18b: Small Satellite Conference 2016</title>
+			<description>
+				Phil and TJ debrief Augie who was live from Small Satellite Conference 2016. Augie was on the show floor for three days, attending sessions on the state of the small sat industry. We talk about the highlights from each day and the coolest things from the confernece.
+		</description>
+			<itunes:summary>
+			Phil and TJ debrief Augie who was live from Small Satellite Conference 2016. Augie was on the show floor for three days, attending sessions on the state of the small sat industry. We talk about the highlights from each day and the coolest things from the confernece.
+			</itunes:summary>
+			<itunes:subtitle>Phil, TJ, and Augie discuss all the announcements and talks from Small Satellite Conference 2016</itunes:subtitle>
+			<itunesu:category itunesu:code="109" />
+			<enclosure url="http://www.podtrac.com/pts/redirect.mp3/www.csh.rit.edu/~tj/SPEXcast_018b_Smallsat2016.mp3" type="audio/mpeg" length="1" />
+			<guid>http://www.csh.rit.edu/~tj/SPEXcast_018b_Smallsat2016.mp3</guid>
+			<itunes:duration>0:47:09</itunes:duration>
+			<pubDate>Wed, 17 Aug 2016 13:05:00 EST</pubDate>
+		</item>
+		<item>
+			<title>18a: Gywnne Shotwell Small Satellite Conference Reactions</title>
+			<description>
+			Phil and TJ debrief Augie who was live from Small Satellite Conference 2016. Augie attended Gwynne Shotwell's keynote speech. We break her speech down point by point and connect it to recent SpaceX news.
+			</description>
+			<itunes:summary>
+			Phil and TJ debrief Augie who was live from Small Satellite Conference 2016. Augie attended Gwynne Shotwell's keynote speech. We break her speech down point by point and connect it to recent SpaceX news.
+			</itunes:summary>
+			<itunes:subtitle>Phil, TJ, and Augie discuss Gwynne Shotwell's recent keynote speech at Small Satellite Conference 2016</itunes:subtitle>
+			<itunesu:category itunesu:code="109" />
+			<enclosure url="http://www.podtrac.com/pts/redirect.mp3/www.csh.rit.edu/~tj/SPEXcast_018a_Gwynne-keynote.mp3" type="audio/mpeg" length="1" />
+			<guid>http://www.csh.rit.edu/~tj/SPEXcast_018a_Gwynne-keynote.mp3</guid>
+			<itunes:duration>0:40:01</itunes:duration>
+			<pubDate>Wed, 17 Aug 2016 13:00:00 EST</pubDate>
+		</item>
+		<item>
+			<title>17: Brendan Byrne Interview</title>
+			<description>
+			Part 2 of the SPEX Summer Series: Phil, Drew, TJ, and Augie sit down with space reporter Brendan Byrne. a producer for public radio station WMFE 90.7 in Orlando, a space reporter for Florida’s Space Coast, and hosts the space exploration podcast Are We There Yet. We dive into the changing political landscape of the Florida Space Coast. What has changed since the shuttle stopped flying in 2011? How are SpaceX and Blue Origin reshaping the space coast to support commercial activities in space? \n
+
+			Relevant links:\n
+			http://projectpossum.org/ \n
+			http://wmfe.org/space \n
+			http://motherboard.vice.com/blog/ringing-in-the-new-year-with-mutiny-in-orbit \n
+			</description>
+			<itunes:summary>
+			Part 2 of the SPEX Summer Series: Phil, Drew, TJ, and Augie sit down with space reporter Brendan Byrne. a producer for public radio station WMFE 90.7 in Orlando, a space reporter for Florida’s Space Coast, and hosts the space exploration podcast Are We There Yet. We dive into the changing political landscape of the Florida Space Coast. What has changed since the shuttle stopped flying in 2011? How are SpaceX and Blue Origin reshaping the space coast to support commercial activities in space? \n
+
+			Relevant links: \n
+			http://projectpossum.org/  \n
+			http://wmfe.org/space \n
+			http://motherboard.vice.com/blog/ringing-in-the-new-year-with-mutiny-in-orbit \n
+			</itunes:summary>
+			<itunes:subtitle>Phil, Drew, TJ, and Augie sit down with space reporter Brendan Byrne</itunes:subtitle>
+			<itunesu:category itunesu:code="109" />
+			<enclosure url="http://www.podtrac.com/pts/redirect.mp3/www.csh.rit.edu/~tj/SPEXcast_017_BrendanByrne.mp3" type="audio/mpeg" length="1" />
+			<guid>http://www.csh.rit.edu/~tj/SPEXcast_017_BrendanByrne.mp3</guid>
+			<itunes:duration>0:43:45</itunes:duration>
+			<pubDate>Sun, 07 Aug 2016 17:00:00 EST</pubDate>
+		</item>
+		<item>
+			<title>16: SPEXcast News Roundup July 2016</title>
+			<description>
+			TJ, Augie, and Drew discuss current events in space for July 2016.
+			</description>
+			<itunes:summary>
+			TJ, Augie, and Drew discuss current events in space for July 2016.
+			</itunes:summary>
+			<itunes:subtitle>SPEXcast News Roundup July 2016</itunes:subtitle>
+			<itunesu:category itunesu:code="109" />
+			<enclosure url="http://www.podtrac.com/pts/redirect.mp3/www.csh.rit.edu/~tj/SPEXcast_016_NewsRoundup-July2016.mp3" type="audio/mpeg" length="1" />
+			<guid>http://www.csh.rit.edu/~tj/SPEXcast_016_NewsRoundup-July2016.mp3</guid>
+			<itunes:duration>0:28:40</itunes:duration>
+			<pubDate>Thu, 04 Aug 2016 05:00:00 EST</pubDate>
+		</item>
+		<item>
+			<title>15: VIOLET</title>
+			<description>
+			Part 1 of the SPEX Summer Series: Phil and TJ interview engineers Padraig Lysandrou and David Levine about their experiences building the Violet satellite at the Cornell Space Systems Design Studio in Ithaca, NY.
+			</description>
+			<itunes:summary>
+			Part 1 of the SPEX Summer Series: Phil and TJ interview engineers Padraig Lysandrou and David Levine about their experiences building the Violet satellite at the Cornell Space Systems Design Studio in Ithaca, NY.
+			</itunes:summary>
+			<itunes:subtitle>SPEXcast talks with the team of VIOLET</itunes:subtitle>
+			<itunesu:category itunesu:code="109" />
+			<enclosure url="http://www.podtrac.com/pts/redirect.mp3/www.csh.rit.edu/~tj/SPEXcast_015_Violet.mp3" type="audio/mpeg" length="1" />
+			<guid>http://www.csh.rit.edu/~tj/SPEXcast_015_Violet.mp3</guid>
+			<itunes:duration>1:22:56</itunes:duration>
+			<pubDate>Wed, 13 Jul 2016 05:00:00 EST</pubDate>
+		</item>
+		<item>
+			<title>14: SPEXcast News Roundup June 2016</title>
+			<description>
+			SPEXcast is back! Phil, TJ, Augie, and Drew discuss this summer's recent events in the space industry.
+			</description>
+			<itunes:summary>
+			SPEXcast is back! Phil, TJ, Augie, and Drew discuss this summer's recent events in the space industry.
+			</itunes:summary>
+			<itunes:subtitle>SPEXcast News Roundup June 2016</itunes:subtitle>
+			<itunesu:category itunesu:code="109" />
+			<enclosure url="http://www.podtrac.com/pts/redirect.mp3/www.csh.rit.edu/~tj/SPEXcast_014_NewsRoundup-June2016.mp3" type="audio/mpeg" length="1" />
+			<guid>http://www.csh.rit.edu/~tj/SPEXcast_014_NewsRoundup-June2016.mp3</guid>
+			<itunes:duration>0:32:43</itunes:duration>
+			<pubDate>Fri, 8 Jul 2016 05:00:00 EST</pubDate>
+		</item>
+		<item>
+			<title>SPEXcast Summer Series Update</title>
+			<description>
+			SPEXcast will be back this summer with a few bonus episodes featuring exclusive interviews from awesome people in the spaceflight industry. For updates and more information, check out Facebook.com/RITSPEX and Twitter @RITSPEX. &#xD;
+			Regular weekly episodes will resume in late August. &#xD;
+			Stay tuned!
+			</description>
+			<itunes:summary>
+			SPEXcast will be back this summer with a few bonus episodes featuring exclusive interviews from awesome people in the spaceflight industry. For updates and more information, check out Facebook.com/RITSPEX and Twitter @RITSPEX. &#xD;
+			Regular weekly episodes will resume in late August. &#xD;
+			Stay tuned!
+			</itunes:summary>
+			<itunes:subtitle>SPEXcast Summer Series Update</itunes:subtitle>
+			<itunesu:category itunesu:code="109" />
+			<enclosure url="http://www.podtrac.com/pts/redirect.mp3/www.csh.rit.edu/~tj/SPEXcast_summerpromo-2016_v2.mp3" type="audio/mpeg" length="1" />
+			<guid>http://www.csh.rit.edu/~tj/SPEXcast_summerpromo-2016_v2.mp3</guid>
+			<itunes:duration>0:03:13</itunes:duration>
+			<pubDate>Fri, 24 Jun 2016 16:00:00 EST</pubDate>
+		</item>
+		<item>
+			<title>13: Asteroid Mining and Public Policy</title>
+			<description>
+			SPEXcast revists Asteroid Mining with Anthony Henning, as he releases his thesis on asteroid mining and public policy. We discuss the policy implications on the growth of asteroid mining in the near future.
+			</description>
+			<itunes:summary>
+			SPEXcast revists Asteroid Mining with Anthony Henning, as he releases his thesis on asteroid mining and public policy. We discuss the policy implications on the growth of asteroid mining in the near future.
+			</itunes:summary>
+			<itunes:subtitle>SPEXcast discusses asteroid mining and public policy</itunes:subtitle>
+			<itunesu:category itunesu:code="109" />
+			<enclosure url="http://www.podtrac.com/pts/redirect.mp3/www.csh.rit.edu/~tj/SPEXcast_013_AsteroidMiningAndPublicPolicy.mp3" type="audio/mpeg" length="1" />
+			<guid>http://www.csh.rit.edu/~tj/SPEXcast_013_AsteroidMiningAndPublicPolicy.mp3</guid>
+			<itunes:duration>1:17:38</itunes:duration>
+			<pubDate>Fri, 20 May 2016 14:00:00 EST</pubDate>
+		</item>
+        <item>
+			<title>12: SPEXcast Live!</title>
+			<description>
+			SPEXcast is live! Phil, T.J., and Augie sit down with our special guest Kevin Cooke for SPEXcast's first live episode from ImagineRIT. Listen in as we discuss the mysterious ice world of Europa, Jupiter's 6th moon. We delve into the unique geological and scientific insights Europa might hold as well as dicuss future plans to explore this strange place. Join us as we investigate Europa Clipper, potential lander missions, and even a nuclear hydrothermal drill!
+			</description>
+			<itunes:summary>
+			SPEXcast is live! Phil, T.J., and Augie sit down with our special guest Kevin Cooke for SPEXcast's first live episode from ImagineRIT. Listen in as we discuss the mysterious ice world of Europa, Jupiter's 6th moon. We delve into the unique geological and scientific insights Europa might hold as well as dicuss future plans to explore this strange place. Join us as we investigate Europa Clipper, potential lander missions, and even a nuclear hydrothermal drill!
+			</itunes:summary>
+			<itunes:subtitle>SPEXcast is live at ImagineRIT, discussing all things Europa</itunes:subtitle>
+			<itunesu:category itunesu:code="109" />
+			<enclosure url="http://www.podtrac.com/pts/redirect.mp3/www.csh.rit.edu/~tj/SPEXcast_012_Europa_Live.mp3" type="audio/mpeg" length="1" />
+			<guid>http://www.csh.rit.edu/~tj/SPEXcast_012_Europa_Live.mp3</guid>
+			<itunes:duration>0:30:51</itunes:duration>
+			<pubDate>Wed, 11 May 2016 10:00:00 EST</pubDate>
+		</item>
+		<item>
+			<title>11: Spaceplanes</title>
+			<description>
+			Phil, Augie, Cole, and newcomer Alex talk about SpaceX and spaceplanes. At the start of the show, the guys discuss SpaceX's recently announced plans to send a capsule to Mars. Skip to 11:34 to hear all about crafts that behave like airplanes in the atmosphere and rockets when in space.
+			</description>
+			<itunes:summary>
+			Phil, Augie, Cole, and newcomer Alex talk about SpaceX and spaceplanes. At the start of the show, the guys discuss SpaceX's recently announced plans to send a capsule to Mars. Skip to 11:34 to hear all about crafts that behave like airplanes in the atmosphere and rockets when in space.
+			</itunes:summary>
+			<itunes:subtitle>SPEXcast discusses past, present, and future spaceplane designs.</itunes:subtitle>
+			<itunesu:category itunesu:code="109" />
+			<enclosure url="http://www.podtrac.com/pts/redirect.mp3/www.csh.rit.edu/~tj/SPEXcast_011_Spaceplanes.mp3" type="audio/mpeg" length="1" />
+			<guid>http://www.csh.rit.edu/~tj/SPEXcast_011_Spaceplanes.mp3</guid>
+			<itunes:duration>0:39:27</itunes:duration>
+			<pubDate>Wed, 4 May 2016 10:00:00 EST</pubDate>
+		</item>
+		<item>
+			<title>10: Cubesats</title>
+			<description>
+			Phil, T.J., Auggie, and our guest Drew discuss Cubesats and their subsystems. These small satellites are taking advantage of the microelectronic revolution to provide low cost platforms for scientific experiments in space. Join us as we break down cubesats, subsystem by subsystem, and show why the Cubesat standard is the ideal opportunity to get hands on experience with space systems.
+			</description>
+			<itunes:summary>
+			Phil, T.J., Auggie, and our guest Drew discuss Cubesats and their subsystems. These small satellites are taking advantage of the microelectronic revolution to provide low cost platforms for scientific experiments in space. Join us as we break down cubesats, subsystem by subsystem, and show why the Cubesat standard is the ideal opportunity to get hands on experience with space systems.
+			</itunes:summary>
+			<itunes:subtitle>SPEXcast discusses cubesats.</itunes:subtitle>
+			<itunesu:category itunesu:code="109" />
+			<enclosure url="http://www.podtrac.com/pts/redirect.mp3/www.csh.rit.edu/~tj/SPEXcast_010_CubeSats.mp3" type="audio/mpeg" length="1" />
+			<guid>http://www.csh.rit.edu/~tj/SPEXcast_010_CubeSats.mp3</guid>
+			<itunes:duration>0:45:30</itunes:duration>
+			<pubDate>Thu, 28 Apr 2016 10:00:00 EST</pubDate>
+		</item>
+		<item>
+			<title>9: Cryonics</title>
+			<description>
+			Biomedical Engineers Augie and Cole lead a discussion on cryonics, torpor, and the science of human preservation in the name of space travel.
+			</description>
+			<itunes:summary>
+			Biomedical Engineers Augie and Cole lead a discussion on cryonics, torpor, and the science of human preservation in the name of space travel.
+			</itunes:summary>
+			<itunes:subtitle>SPEXcast discusses cryonics</itunes:subtitle>
+			<itunesu:category itunesu:code="109" />
+			<enclosure url="http://www.podtrac.com/pts/redirect.mp3/www.csh.rit.edu/~tj/SPEXcast_009_Cryonics.mp3" type="audio/mpeg" length="1" />
+			<guid>http://www.csh.rit.edu/~tj/SPEXcast_009_Cryonics.mp3</guid>
+			<itunes:duration>0:56:24</itunes:duration>
+			<pubDate>Thu, 21 Apr 2016 01:15:00 EST</pubDate>
+		</item>
+        <item>
+			<title>8: RIT Astronomy Week</title>
+			<description>
+			It's Astronomy Week here at RIT, so Phil and TJ sit down with  two astronomers and physicists, Dr. Jennifer Connelly and Dr. Michael Zemcov, to talk about the technology that allows us to see beyond our home planet -- telescopes. How do modern telescopes work? Is empty space really empty? Can we use wormholes as windows across the universe?
+			</description>
+			<itunes:summary>
+			It's Astronomy Week here at RIT, so Phil and TJ sit down with  two astronomers and physicists, Dr. Jennifer Connelly and Dr. Michael Zemcov, to talk about the technology that allows us to see beyond our home planet -- telescopes. How do modern telescopes work? Is empty space really empty? Can we use wormholes as windows across the universe?
+			</itunes:summary>
+			<itunes:subtitle>SPEXcast discusses telescopes, big and small</itunes:subtitle>
+			<itunesu:category itunesu:code="109" />
+			<enclosure url="http://www.podtrac.com/pts/redirect.mp3/www.csh.rit.edu/~tj/SPEXcast_008_Telescopes.mp3" type="audio/mpeg" length="1" />
+			<guid>http://www.csh.rit.edu/~tj/SPEXcast_008_Telescopes.mp3</guid>
+			<itunes:duration>0:56:24</itunes:duration>
+			<pubDate>Wed, 13 Apr 2016 01:15:00 EST</pubDate>
+		</item>
+		<item>
+            <title>7: Rocket Propulsion</title>
+            <description>
+			Phil, TJ, and August sit down with our special guest, Ben McFadden, to talk about rocket engines. Why do we use rockets in space? What physical principles govern rocket engines? What are the basic designs of chemical rocket engines and how can they be improved?
+			</description>
+            <itunes:summary>
+			Phil, TJ, and August sit down with our special guest, Ben McFadden, to talk about rocket engines. Why do we use rockets in space? What physical principles govern rocket engines? What are the basic designs of chemical rocket engines and how can they be improved?
+			</itunes:summary>
+			<itunes:subtitle>SPEXcast discusses rocket propulsion theory and design</itunes:subtitle>
+            <itunesu:category itunesu:code="109" />
+            <enclosure url="http://www.podtrac.com/pts/redirect.mp3/www.csh.rit.edu/~tj/SPEXcast_007_Propulsion.mp3" type="audio/mpeg" length="1" />
+            <guid>http://www.csh.rit.edu/~tj/SPEXcast_007_Propulsion.mp3</guid>
+            <itunes:duration>0:35:20</itunes:duration>
+            <pubDate>Wed, 06 Apr 2016 10:00:00 EST</pubDate>
+        </item>
+		<item>
+            <title>6: Interplanetary Travel</title>
+            <description>
+			Phil, TJ, and Anthony discuss all the different methods of travelling within our solar system. What types of propulsion is out there? How can we survive long journeys? Do astronauts eat enough?
+			</description>
+            <itunes:summary>
+			Phil, TJ, and Anthony discuss all the different methods of travelling within our solar system. What types of propulsion is out there? How can we survive long journeys? Do astronauts eat enough?
+			</itunes:summary>
+			<itunes:subtitle>SPEXcast discusses the challenges and future of interplanetary travel</itunes:subtitle>
+            <itunesu:category itunesu:code="109" />
+            <enclosure url="http://www.podtrac.com/pts/redirect.mp3/www.csh.rit.edu/~tj/SPEXcast_006_InterplanetaryTravel.mp3" type="audio/mpeg" length="1" />
+            <guid>http://www.csh.rit.edu/~tj/SPEXcast_006_InterplanetaryTravel.mp3</guid>
+            <itunes:duration>0:50:55</itunes:duration>
+            <pubDate>Wed, 30 Mar 2016 14:50:00 EST</pubDate>
+        </item>
+		<item>
+            <title>5: Q&amp;A with the Center for Computational Relativity and Gravitation</title>
+            <description>
+			SPEXcast hosts a Q&amp;A session with Brennan Ireland and Monica Rizzo, two researchers from the RIT Center for Computational Relativity and Gravitation (CCRG) who simulate spacetime with supercomputers. How are gravitational waves modeled? Are there practical applications for gravitational waves? Can we simulate wormholes? What does a black hole merger sound like?
+			</description>
+            <itunes:summary>SPEXcast hosts a Q&amp;A session with Brennan Ireland and Monica Rizzo, two researchers from the RIT Center for Computational Relativity and Gravitation (CCRG) who simulate spacetime with supercomputers. How are gravitational waves modeled? Are there practical applications for gravitational waves? Can we simulate wormholes? What does a black hole merger sound like?
+			</itunes:summary>
+			<itunes:subtitle>SPEXcast interviews two researchers from the Center for Computation Relativity and Gravitation</itunes:subtitle>
+            <itunesu:category itunesu:code="109" />
+            <enclosure url="http://www.podtrac.com/pts/redirect.mp3/www.csh.rit.edu/~tj/SPEXcast_005_QnAwithCCRG.mp3" type="audio/mpeg" length="1" />
+            <guid>http://www.csh.rit.edu/~tj/SPEXcast_005_QnAwithCCRG.mp3</guid>
+            <itunes:duration>0:55:18</itunes:duration>
+            <pubDate>Wed, 23 Mar 2016 10:00:00 PST</pubDate>
+        </item>
+		<item>
+            <title>4: Asteroid Mining</title>
+            <description>SPEXcast discusses the future of asteroid mining. Our special guest, Anthony Hennig is a 5th year student at RIT whose thesis is on Asteroid Mining Public Policy. Who owns asteroids? Is it moral to mine asteroids but not Mars? How do we utilize the resources we harvest in space?</description>
+            <itunes:summary>SPEXcast discusses the future of asteroid mining. Our special guest, Anthony Hennig is a 5th year student at RIT whose thesis is on Asteroid Mining Public Policy. Who owns asteroids? Is it moral to mine asteroids but not Mars? How do we utilize the resources we harvest in space?
+			</itunes:summary>
+			<itunes:subtitle>SPEXcast discusses asteroid mining technologies and future policies</itunes:subtitle>
+            <itunesu:category itunesu:code="109" />
+            <enclosure url="http://www.podtrac.com/pts/redirect.mp3/www.csh.rit.edu/~tj/SPEXcast_004_AsteroidMining.mp3" type="audio/mpeg" length="1" />
+            <guid>http://www.csh.rit.edu/~tj/SPEXcast_004_AsteroidMining.mp3</guid>
+            <itunes:duration>0:55:28</itunes:duration>
+            <pubDate>Wed, 16 Mar 2016 07:00:00 PST</pubDate>
+        </item>
+		<item>
+            <title>3: Moon vs. Mars</title>
+            <description>SPEXcast dicusses whether humanity should focus on the Moon or Mars first as it steps out beyond the Earth's gravity well. Should we use the Moon to practice eventual techniques for visiting Mars? What benefit would a lunar colony have for humanity? Would a Phobos base speed up Martian colonization? We delve into all of those questions in this episode of SPEXcast.</description>
+            <itunes:summary>SPEXcast dicusses whether humanity should focus on the Moon or Mars first as it steps out beyond the Earth's gravity well. Should we use the Moon to practice eventual techniques for visiting Mars? What benefit would a lunar colony have for humanity? Would a Phobos base speed up Martian colonization? We delve into all of those questions in this episode of SPEXcast.
+			</itunes:summary>
+			<itunes:subtitle>SPEXcast discusses Moon vs Mars Colonization</itunes:subtitle>
+            <itunesu:category itunesu:code="109" />
+            <enclosure url="http://www.podtrac.com/pts/redirect.mp3/www.csh.rit.edu/~tj/SPEXcast_003_MoonVMars.mp3" type="audio/mpeg" length="1" />
+            <guid>http://www.csh.rit.edu/~tj/SPEXcast_003_MoonVMars.mp3</guid>
+            <itunes:duration>0:37:33</itunes:duration>
+            <pubDate>Mon, 07 Mar 2016 08:00:00 EST</pubDate>
+        </item>
+		<item>
+            <title>2b: Brave New World</title>
+            <description>SPEXcast goes a bit off-topic and discusses the dystopia of Brave New World. We discuss the role of production on the culture of society and whether the achievement of universal happiness is the satisfying conclusion of the pursuit of happiness</description>
+            <itunes:summary>SPEXcast goes a bit off-topic and discusses the dystopia of Brave New World. We discuss the role of production on the culture of society and whether the achievement of universal happiness is the satisfying conclusion of the pursuit of happiness
+			</itunes:summary>
+			<itunes:subtitle>SPEXcast discusses Brave New World</itunes:subtitle>
+            <itunesu:category itunesu:code="109" />
+            <enclosure url="http://www.podtrac.com/pts/redirect.mp3/www.csh.rit.edu/~tj/SPEXcast_002b_BraveNewWorld.mp3" type="audio/mpeg" length="1" />
+            <guid>http://www.csh.rit.edu/~tj/SPEXcast_002b_BraveNewWorld.mp3</guid>
+            <itunes:duration>0:18:00</itunes:duration>
+            <pubDate>Tue, 01 Mar 2016 16:00:00 EST</pubDate>
+        </item>
+		<item>
+            <title>2a: Gravitational Waves</title>
+            <description>SPEXcast discusses the recent discovery of gravitational waves. We delve into RIT's key role in the discovery, as well as the history of the theory of gravitational waves.</description>
+            <itunes:summary>SPEXcast discusses the recent discovery of gravitational waves. We delve into RIT's key role in the discovery, as well as the history of the theory of gravitational waves.</itunes:summary>
+            <itunes:subtitle>SPEXcast discusses the recent discovery of gravitational waves.</itunes:subtitle>
+            <itunesu:category itunesu:code="109" />
+            <enclosure url="http://www.podtrac.com/pts/redirect.mp3/www.csh.rit.edu/~tj/SPEXcast_002a_GravitationalWaves.mp3" type="audio/mpeg" length="1" />
+            <guid>http://www.csh.rit.edu/~tj/SPEXcast_002a_GravitationalWaves.mp3</guid>
+            <itunes:duration>0:29:41</itunes:duration>
+            <pubDate>Tue, 01 Mar 2016 14:00:00 EST</pubDate>
+        </item>
+        <item>
+            <title>1: Rocket Reusability</title>
+            <description>SPEXcast delves into the field of reusable rocket technology. Listen as we discuss SpaceX's historic rocket landing, Blue Origin's New Shepard, SMART reuse and Project Adeline.</description>
+            <itunes:summary>SPEXcast delves into the field of reusable rocket technology. Listen as we discuss SpaceX's historic rocket landing, Blue Origin's New Shepard, SMART reuse and Project Adeline.</itunes:summary>
+            <itunes:subtitle>SPEXcast delves into the field of reusable rocket technology.</itunes:subtitle>
+            <itunesu:category itunesu:code="109" />
+            <enclosure url="http://www.podtrac.com/pts/redirect.mp3/www.csh.rit.edu/~tj/SPEXcast_001_RocketReusability.mp3" type="audio/mpeg" length="1" />
+            <guid>http://www.csh.rit.edu/~tj/SPEXcast_001_RocketReusability.mp3</guid>
+            <itunes:duration>0:34:38</itunes:duration>
+            <pubDate>Tue, 01 Mar 2016 12:00:00 EST</pubDate>
+        </item>
+    </channel>
+</rss>
