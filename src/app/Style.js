@@ -7,6 +7,13 @@ const Style = {
     maxWidth: 1280,
     margin: 'auto',
   },
+  episodeContainer: {
+    justifyContent: 'space-around',
+    textAlign: 'left',
+    maxWidth: 1280,
+    margin: 'auto',
+    marginLeft: '10px',
+  },
   gridList: {
      overflowY: 'auto',
      margin: 'auto',
