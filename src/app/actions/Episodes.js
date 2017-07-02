@@ -1,5 +1,6 @@
 import ActionTypes from './ActionTypes';
 import Immutable from 'immutable';
+import jQuery from 'jquery';
 
 export function fetchEpisodes() {
   return dispatch => {

@@ -4,6 +4,8 @@
  * and GPL (GPL-license.txt) licenses.
  */
 
+import jQuery from 'jquery';
+
 jQuery.getFeed = function(options) {
 
     options = jQuery.extend({

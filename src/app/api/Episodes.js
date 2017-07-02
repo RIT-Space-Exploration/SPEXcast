@@ -1,3 +1,5 @@
+import jQuery from 'jquery';
+
 export function fetchEpisodes() {
   return jQuery.getFeed({
       url: 'https://spexcast.csh.rit.edu/',

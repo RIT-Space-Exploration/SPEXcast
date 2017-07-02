@@ -34,7 +34,7 @@ const config = {
     new webpack.NoErrorsPlugin(),
     new webpack.ProvidePlugin({
       $: "jquery",
-      jQuery: "jquery"
+      jQuery: "jquery",
     }),
     // Moves files
     new TransferWebpackPlugin([
