@@ -8,6 +8,10 @@ class About extends Component {
         super(props, context);
     }
 
+    someFunction() {
+        console.log("clicked");
+    }
+
     render() {
         return(
             <div style={Style.container}>
@@ -20,6 +24,7 @@ class About extends Component {
                             subtitle={host.catchphrase}
                             avatar={`img/${host.imgFile}`}
                             style={Style.cardHeader}
+                            onClickk={this.someFunction}
                         />
                         <CardMedia
                             overlay={<CardTitle title={`Favorite Spacecraft: ${host.favoriteSpacecraft}`} subtitle={`Specializations: ${host.specialization}`} />}

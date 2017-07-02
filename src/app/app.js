@@ -2,6 +2,7 @@ import React from 'react';
 import {render} from 'react-dom';
 import { Provider } from 'react-redux';
 import configureStore from './utils/configureStore';
+import './utils/jfeed';
 import injectTapEventPlugin from 'react-tap-event-plugin';
 import { Router, Route, IndexRoute, Link, hashHistory } from 'react-router'
 import Main from './Main';

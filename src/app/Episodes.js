@@ -27,13 +27,13 @@ class Episodes extends Component {
         {episodes && episodes.get('items').map((episode)=> (
           <Card key={episode.get('title')}>
             <CardHeader
-                title={episode.get('pubdate')}
+                title={episode.get('pubDate')}
                 style={Style.cardHeader}
             />
-            <CardTitle title={episode.get('title')} subtitle={episode.get('itunes:subtitle')} />
+            <CardTitle title={episode.get('title')} subtitle={episode.get('subtitle')} />
             <CardText>{episode.get('description')}</CardText>
             <ReactAudioPlayer
-              src={episode.getIn(['enclosure', 'url'])}
+              src={episode.get('link')}
             />
           </Card>
         ))}
