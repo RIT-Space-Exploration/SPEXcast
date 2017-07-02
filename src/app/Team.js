@@ -33,11 +33,11 @@ const Team = [
         name: 'Augie Allen',
         major: 'Biomedical Engineering BS',
         imgFile: 'augieHeadshot.png',
-        catchphrase: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed condimentum, purus eros triste lacus, sit amet.',
+        catchphrase: 'In Elon we trust"',
         bio: 'Biomedical Engineering alumni and aspiring interplanetary traveler. Currently living in Salt Lake City, Utah',
         favoriteSpacecraft: 'Crew Dragon',
         spacecraftImg: 'redDragon.png',
-        specialization: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur malesuada',
+        specialization: 'Biomedical Sciences',
     },
 ];
 
