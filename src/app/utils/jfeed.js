@@ -5,6 +5,7 @@
  */
 
 import jQuery from 'jquery';
+const $ = jQuery;
 
 jQuery.getFeed = function(options) {
 

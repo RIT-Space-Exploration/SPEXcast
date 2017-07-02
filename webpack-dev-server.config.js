@@ -32,10 +32,6 @@ const config = {
     new webpack.HotModuleReplacementPlugin(),
     // Allows error warnings but does not stop compiling.
     new webpack.NoErrorsPlugin(),
-    new webpack.ProvidePlugin({
-      $: "jquery",
-      jQuery: "jquery",
-    }),
     // Moves files
     new TransferWebpackPlugin([
       {from: 'www'},
