@@ -1,17 +1,10 @@
 import React, {Component} from 'react';
-import RaisedButton from 'material-ui/RaisedButton';
-import Dialog from 'material-ui/Dialog';
 import {deepOrange500} from 'material-ui/styles/colors';
-import FlatButton from 'material-ui/FlatButton';
 import getMuiTheme from 'material-ui/styles/getMuiTheme';
 import MuiThemeProvider from 'material-ui/styles/MuiThemeProvider';
-import Slider from 'material-ui/Slider';
-import {Card, CardActions, CardHeader, CardMedia, CardTitle, CardText} from 'material-ui/Card';
-import AppBar from 'material-ui/AppBar';
 import {GridList, GridTile} from 'material-ui/GridList';
 import IconButton from 'material-ui/IconButton';
 import Subheader from 'material-ui/Subheader';
-import StarBorder from 'material-ui/svg-icons/toggle/star-border';
 import FileDownload from 'material-ui/svg-icons/file/file-download';
 import audioFiles from './AudioFiles.js';
 import Style from './Style.js';
@@ -112,7 +105,7 @@ class Soundboard extends Component {
                        </IconButton>}
                   onTouchTap={() => {this.handlePlayAudio(soundbite.fileName)}}
                 >
-                <img src={'img/spexcast.png'} />
+                <img alt="" src={'img/spexcast.png'} />
                 </GridTile>
               ))}
             </GridList>

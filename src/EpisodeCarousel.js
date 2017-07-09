@@ -1,13 +1,8 @@
 import React, {Component} from 'react';
 import Style from './Style'
-import { GridList, GridTile } from 'material-ui/GridList';
+// import { GridList, GridTile } from 'material-ui/GridList';
 
 class Episodes extends Component {
-  constructor(props, context) {
-      super(props, context);
-
-
-  }
 
   render() {
     return(

@@ -1,5 +1,5 @@
 import React, {Component} from 'react';
-import { Link } from 'react-router'
+import { Link } from 'react-router-dom'
 import {deepOrange500} from 'material-ui/styles/colors';
 import getMuiTheme from 'material-ui/styles/getMuiTheme';
 import MuiThemeProvider from 'material-ui/styles/MuiThemeProvider';
@@ -12,6 +12,7 @@ import OpenInNew from 'material-ui/svg-icons/action/open-in-new';
 import Home from 'material-ui/svg-icons/action/home';
 import Toys from 'material-ui/svg-icons/hardware/toys';
 import Style from './Style.js';
+
 const muiTheme = getMuiTheme({
   palette: {
     accent1Color: deepOrange500,
