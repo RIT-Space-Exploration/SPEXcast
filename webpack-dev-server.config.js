@@ -8,21 +8,16 @@ dotenv.load();
 
 const config = {
   // Entry points to the project
-  entry: [
-    'webpack/hot/dev-server',
-    'webpack/hot/only-dev-server',
-    path.join(__dirname, '/src/app/app.js'),
-  ],
+  entry: path.join(__dirname, '/src/app/app.js'),
   // Server Configuration options
   devServer: {
     contentBase: 'src/www', // Relative directory for base of server
-    devtool: 'eval',
     hot: true, // Live-reload
     inline: true,
     port: process.env.PORT || 3000, // Port Number
     host: process.env.WEBPACK_HOST, // Change to '0.0.0.0' for external facing server
   },
-  devtool: 'eval',
+  devtool: "source-map",
   output: {
     path: buildPath, // Path of output file
     filename: 'app.js',
@@ -31,7 +26,7 @@ const config = {
     // Enables Hot Modules Replacement
     new webpack.HotModuleReplacementPlugin(),
     // Allows error warnings but does not stop compiling.
-    new webpack.NoErrorsPlugin(),
+    new webpack.NoEmitOnErrorsPlugin(),
     // Moves files
     new TransferWebpackPlugin([
       {from: 'www'},
