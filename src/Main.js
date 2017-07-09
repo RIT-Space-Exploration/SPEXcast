@@ -12,16 +12,18 @@ const muiTheme = getMuiTheme({
 });
 
 class Main extends Component {
-    render() {
-        return(
-            <MuiThemeProvider muiTheme={muiTheme}>
-                <div style={Style.container}>
-                    <SPEXHeader />
-                    {this.props.children}
-                </div>
-            </MuiThemeProvider>
-        );
-    }
+  render() {
+    return(
+      <MuiThemeProvider muiTheme={muiTheme}>
+        <div>
+          <SPEXHeader />
+          <div style={Style.container}>
+            {this.props.children}
+          </div>
+        </div>
+      </MuiThemeProvider>
+    );
+  }
 }
 
 export default Main;

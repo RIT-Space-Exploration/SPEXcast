@@ -3,6 +3,7 @@ import {render} from 'react-dom';
 import { Provider } from 'react-redux';
 import configureStore from './utils/configureStore';
 import './utils/jfeed';
+import './index.css';
 import injectTapEventPlugin from 'react-tap-event-plugin';
 import { Router, Route } from 'react-router'
 import Main from './Main';
@@ -38,15 +39,3 @@ render((
   </Provider>
 ), document.getElementById('root'))
 registerServiceWorker();
-
-/*
-import React from 'react';
-import ReactDOM from 'react-dom';
-import './index.css';
-import App from './App';
-import registerServiceWorker from './registerServiceWorker';
-
-ReactDOM.render(<App />, document.getElementById('root'));
-registerServiceWorker();
-
-*/

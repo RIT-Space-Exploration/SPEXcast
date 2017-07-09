@@ -32,17 +32,20 @@ class Episodes extends Component {
       src: episode.get('link')
     };
     return (
-      <Card key={episode.get('title')}>
+      <Card
+        key={episode.get('title')}
+        style={Style.episodeCard}  
+      >
         <CardHeader
-            title={episode.get('pubDate')}
+            title={`Released on ${episode.get('pubDate')}`}
             style={Style.cardHeader}
         />
         <CardTitle title={episode.get('title')} subtitle={episode.get('subtitle')} />
         <CardText>{episode.get('description')}</CardText>
         <Audio
-          fullPlayer={false}
           playlist={[songObj]}
-          comments={false}
+          style={Style.episodeAudioPlayer}
+          color="#FF5722"
         />
       </Card>
     );
@@ -54,10 +57,12 @@ class Episodes extends Component {
     
     return(
       <MuiThemeProvider muiTheme={muiTheme}>
-        <div style={Style.episodeContainer}>
-          <h1>Episodes</h1> <br/>
-          <h2>We are a group of passionate space fans from Rochester Institute of Technology</h2>
-          {episodes && episodes.get('items').map(this.renderEpisodeCard)}
+        <div style={Style.container}>
+          <div style={Style.episodeContainer}>
+            <h1>Episodes</h1> <br/>
+            <h2>We are a group of passionate space fans from Rochester Institute of Technology</h2>
+            {episodes && episodes.get('items').map(this.renderEpisodeCard)}
+          </div>
         </div>
        </MuiThemeProvider>
     );

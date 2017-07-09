@@ -29,6 +29,12 @@ const Style = {
    },
    header: {
      maxWidth: '100%'
+   },
+   episodeCard: {
+     marginBottom: '10px',
+   },
+   episodeAudioPlayer: {
+     width: '100%',
    }
 };
 
