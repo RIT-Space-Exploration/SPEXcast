@@ -1,9 +1,11 @@
 import React, {Component} from 'react';
+import { fetchEpisodes } from './actions/Episodes';
 import SPEXHeader from './SPEXHeader.js';
 import getMuiTheme from 'material-ui/styles/getMuiTheme';
 import MuiThemeProvider from 'material-ui/styles/MuiThemeProvider';
 import {deepOrange500} from 'material-ui/styles/colors';
 import Style from './Style.js';
+import { connect } from 'react-redux';
 
 const muiTheme = getMuiTheme({
   palette: {
@@ -12,6 +14,12 @@ const muiTheme = getMuiTheme({
 });
 
 class Main extends Component {
+
+  componentDidMount() {
+    const { dispatch } = this.props;
+    dispatch(fetchEpisodes());
+  }
+  
   render() {
     return(
       <MuiThemeProvider muiTheme={muiTheme}>
@@ -26,4 +34,4 @@ class Main extends Component {
   }
 }
 
-export default Main;
+export default connect()(Main);

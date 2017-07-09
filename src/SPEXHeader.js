@@ -40,6 +40,12 @@ class SPEXHeader extends Component {
     console.log('Menu Item Touched');
     console.log(event);
   }
+/*
+  renderHeaderTitle() {
+    return (
+      <h4><img alt="" width="192" height="192" src={'img/spexcast.png'} />SPEXcast</h4>
+    );
+  }*/
 
   render() {
     const { open } = this.state;

@@ -12,9 +12,8 @@ export function fetchEpisodes() {
       success: function(feed) {
         dispatch({
           type: ActionTypes.FETCH_EPISODES_SUCCEEDED,
-          data: Immutable.fromJS(feed),
+          episodes: Immutable.fromJS(feed),
         });
-        console.log('episodes fetched');
       }
     });
   };

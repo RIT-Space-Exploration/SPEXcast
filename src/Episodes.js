@@ -1,10 +1,12 @@
-import React, {Component} from 'react';
+import React, { Component } from 'react';
+import PropTypes from 'prop-types';
+import Immutable from 'immutable';
+import { fetchEpisodes } from './actions/Episodes';
 import getMuiTheme from 'material-ui/styles/getMuiTheme';
 import MuiThemeProvider from 'material-ui/styles/MuiThemeProvider';
-import {deepOrange500} from 'material-ui/styles/colors';
+import { deepOrange500 } from 'material-ui/styles/colors';
 import Style from './Style.js';
-import {Card, CardHeader, CardTitle, CardText} from 'material-ui/Card';
-import { fetchEpisodes } from './actions/Episodes';
+import { Card, CardHeader, CardTitle, CardText } from 'material-ui/Card';
 import { connect } from 'react-redux';
 import Audio from 'react-audioplayer';
 
@@ -22,8 +24,10 @@ class Episodes extends Component {
   }
 
   componentDidMount() {
-    const { dispatch } = this.props;
-    dispatch(fetchEpisodes());
+    const { dispatch, lastUpdated, episodes } = this.props;
+    if (lastUpdated <= Date.now() + 300000 || episodes.size <= 0) {
+      dispatch(fetchEpisodes());
+    }
   }
 
   renderEpisodeCard(episode) {
@@ -60,8 +64,8 @@ class Episodes extends Component {
         <div style={Style.container}>
           <div style={Style.episodeContainer}>
             <h1>Episodes</h1> <br/>
-            <h2>We are a group of passionate space fans from Rochester Institute of Technology</h2>
-            {episodes && episodes.get('items').map(this.renderEpisodeCard)}
+            <h2>Here you can find the complete list of episodes released by SPEXcast.</h2>
+            {episodes && episodes.map(this.renderEpisodeCard)}
           </div>
         </div>
        </MuiThemeProvider>
@@ -69,9 +73,15 @@ class Episodes extends Component {
   }
 }
 
+Episodes.propTypes = {
+  episodes: PropTypes.instanceOf(Immutable.List).isRequired,
+  lastUpdated: PropTypes.number.isRequired,
+}
+
 const mapStateToProps = (state) => {
   return {
-    episodes: state.episodes
+    episodes: state.episodes.get('episodes'),
+    lastUpdated: state.episodes.get('lastUpdated'),
   };
 };
 

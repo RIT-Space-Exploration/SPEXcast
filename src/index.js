@@ -19,7 +19,7 @@ const history = createBrowserHistory();
 // Needed for onTouchTap
 // http://stackoverflow.com/a/34015469/988941
 injectTapEventPlugin();
-let store = configureStore({episodes: null});
+let store = configureStore();
 // Render the main app react component into the app div.
 // For more details see: https://facebook.github.io/react/docs/top-level-api.html#react.render
 //render(<Main />, document.getElementById('app'));
