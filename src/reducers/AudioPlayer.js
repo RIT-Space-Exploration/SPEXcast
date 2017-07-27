@@ -1,29 +1,31 @@
 import ActionTypes from '../actions/ActionTypes';
 import Immutable from 'immutable';
+import {
+  setEpisodeToStartOfQueue,
+  addEpisodeToQueue,
+  addEpisodeNextInQueue
+} from '../utils/AudioPlayer';
 
 const DEFAULT = Immutable.Map({
-  currentEpisodeIndex: -1,
-  isPlaying: false
+  playlist: Immutable.List()
 });
 
 export default function AudioPlayer(state = DEFAULT, action) {
-  const { type, episodeIndex } = action;
+  const { type, episode } = action;
 
   switch (type) {
     case ActionTypes.START_PLAYING_EPISODE:
       return state.merge({
-        currentEpisodeIndex: episodeIndex,
-        isPlaying: true
+        playlist: setEpisodeToStartOfQueue(state.playlist, episode)
       });
-    case ActionTypes.STOP_PLAYING_EPISODE:
+    case ActionTypes.ADD_EPISODE_TO_PLAYLIST:
       return state.merge({
-        isPlaying: false
+        playlist: addEpisodeToQueue(state.playlist, episode)
       });
-    case ActionTypes.SKIP_TO_NEXT_EPISODE:
+    case ActionTypes.PLAY_EPISODE_NEXT:
       return state.merge({
-        currentEpisodeIndex: state.get('currentEpisodeIndex') + 1
+        playlist: addEpisodeNextInQueue(state.playlist, episode)
       });
-
     default:
       return state;
   }

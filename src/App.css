@@ -26,10 +26,10 @@ body {
 
 .audio-player {
   position: fixed;
-  align: center;
   z-index: 10;
   bottom: 0;
   width: 35%;
+  min-width: 350px;
   max-width: 720px;
   background-color: #fff;
 }

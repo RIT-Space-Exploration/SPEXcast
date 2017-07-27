@@ -1,21 +1,22 @@
 import ActionTypes from './ActionTypes';
 import { getEpisodeIndexFromId } from '../utils/Episodes';
 
-export function playEpisode(episodeId, episodes) {
+export function playEpisode(episode) {
   return {
     type: ActionTypes.START_PLAYING_EPISODE,
-    episodeIndex: getEpisodeIndexFromId(episodeId, episodes)
+    episode: {
+      name: episode.get('title'),
+      src: episode.get('link')
+    }
   };
 }
 
-export const pauseEpisode = {
-  type: ActionTypes.STOP_PLAYING_EPISODE
-};
-
-export const skipEpisodeForwards = {
-  type: ActionTypes.SKIP_TO_NEXT_EPISODE
-};
-
-export const skipEpisodeBackwards = {
-  type: ActionTypes.SKIP_TO_PREVIOUS_EPISODE
-};
+export function addToPlaylist(episode) {
+  return {
+    type: ActionTypes.ADD_EPISODE_TO_PLAYLIST,
+    episode: {
+      name: episode.get('title'),
+      src: episode.get('link')
+    }
+  };
+}
