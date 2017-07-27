@@ -1,19 +1,19 @@
 import React from 'react';
-import {render} from 'react-dom';
+import { render } from 'react-dom';
 import { Provider } from 'react-redux';
 import configureStore from './utils/configureStore';
 import './utils/jfeed';
-import './index.css';
+import './App.css';
 import injectTapEventPlugin from 'react-tap-event-plugin';
-import { Router, Route } from 'react-router'
-import Main from './Main';
-import Home from './Home';
-import About from './About';
-import Episodes from './Episodes';
-import Soundboard from './Soundboard';
+import { Router, Route } from 'react-router';
+import Main from './containers/Main';
+import Home from './components/Home';
+import About from './components/About';
+import Episodes from './components/Episodes';
+import Soundboard from './components/Soundboard';
 
-import registerServiceWorker from './registerServiceWorker';
-import { createBrowserHistory } from 'history'
+import registerServiceWorker from './utils/registerServiceWorker';
+import { createBrowserHistory } from 'history';
 const history = createBrowserHistory();
 
 // Needed for onTouchTap
@@ -24,7 +24,7 @@ let store = configureStore();
 // For more details see: https://facebook.github.io/react/docs/top-level-api.html#react.render
 //render(<Main />, document.getElementById('app'));
 
-render((
+render(
   <Provider store={store}>
     <Router history={history}>
       <div>
@@ -36,6 +36,7 @@ render((
         <Route path="/soundboard" component={Soundboard} />
       </div>
     </Router>
-  </Provider>
-), document.getElementById('root'))
+  </Provider>,
+  document.getElementById('root')
+);
 registerServiceWorker();

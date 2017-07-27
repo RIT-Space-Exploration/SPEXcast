@@ -1,26 +1,25 @@
 import React, { Component } from 'react';
 import PropTypes from 'prop-types';
 import Immutable from 'immutable';
-import { fetchEpisodes } from './actions/Episodes';
+import { fetchEpisodes } from '../actions/Episodes';
 import getMuiTheme from 'material-ui/styles/getMuiTheme';
 import MuiThemeProvider from 'material-ui/styles/MuiThemeProvider';
 import { deepOrange500 } from 'material-ui/styles/colors';
-import Style from './Style.js';
+import Style from '../Style.js';
 import { Card, CardHeader, CardTitle, CardText } from 'material-ui/Card';
 import { connect } from 'react-redux';
 import Audio from 'react-audioplayer';
 
 const muiTheme = getMuiTheme({
   palette: {
-    primary1Color: deepOrange500,
-  },
+    primary1Color: deepOrange500
+  }
 });
-
 
 class Episodes extends Component {
   constructor(props, context) {
-      super(props, context);
-      this.state = { episodes: null };
+    super(props, context);
+    this.state = { episodes: null };
   }
 
   componentDidMount() {
@@ -36,16 +35,18 @@ class Episodes extends Component {
       src: episode.get('link')
     };
     return (
-      <Card
-        key={episode.get('title')}
-        style={Style.episodeCard}  
-      >
+      <Card key={episode.get('title')} style={Style.episodeCard}>
         <CardHeader
-            title={`Released on ${episode.get('pubDate')}`}
-            style={Style.cardHeader}
+          title={`Released on ${episode.get('pubDate')}`}
+          style={Style.cardHeader}
         />
-        <CardTitle title={episode.get('title')} subtitle={episode.get('subtitle')} />
-        <CardText>{episode.get('description')}</CardText>
+        <CardTitle
+          title={episode.get('title')}
+          subtitle={episode.get('subtitle')}
+        />
+        <CardText>
+          {episode.get('description')}
+        </CardText>
         <Audio
           playlist={[songObj]}
           style={Style.episodeAudioPlayer}
@@ -55,33 +56,35 @@ class Episodes extends Component {
     );
   }
 
-
   render() {
     const { episodes } = this.props;
-    
-    return(
+
+    return (
       <MuiThemeProvider muiTheme={muiTheme}>
         <div style={Style.container}>
           <div style={Style.episodeContainer}>
-            <h1>Episodes</h1> <br/>
-            <h2>Here you can find the complete list of episodes released by SPEXcast.</h2>
+            <h1>Episodes</h1> <br />
+            <h2>
+              Here you can find the complete list of episodes released by
+              SPEXcast.
+            </h2>
             {episodes && episodes.map(this.renderEpisodeCard)}
           </div>
         </div>
-       </MuiThemeProvider>
+      </MuiThemeProvider>
     );
   }
 }
 
 Episodes.propTypes = {
   episodes: PropTypes.instanceOf(Immutable.List).isRequired,
-  lastUpdated: PropTypes.number.isRequired,
-}
+  lastUpdated: PropTypes.number.isRequired
+};
 
-const mapStateToProps = (state) => {
+const mapStateToProps = state => {
   return {
     episodes: state.episodes.get('episodes'),
-    lastUpdated: state.episodes.get('lastUpdated'),
+    lastUpdated: state.episodes.get('lastUpdated')
   };
 };
 
