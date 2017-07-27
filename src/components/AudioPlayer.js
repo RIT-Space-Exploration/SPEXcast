@@ -36,6 +36,7 @@ class AudioPlayer extends Component {
         <Audio
           style={Style.episodeAudioPlayer}
           playlist={playlist.toJS()}
+          autoPlay={true}
           color="#FF5722"
         />
       </div>

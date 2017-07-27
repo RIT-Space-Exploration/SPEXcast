@@ -16,15 +16,15 @@ export default function AudioPlayer(state = DEFAULT, action) {
   switch (type) {
     case ActionTypes.START_PLAYING_EPISODE:
       return state.merge({
-        playlist: setEpisodeToStartOfQueue(state.playlist, episode)
+        playlist: setEpisodeToStartOfQueue(state.get('playlist'), episode)
       });
     case ActionTypes.ADD_EPISODE_TO_PLAYLIST:
       return state.merge({
-        playlist: addEpisodeToQueue(state.playlist, episode)
+        playlist: addEpisodeToQueue(state.get('playlist'), episode)
       });
     case ActionTypes.PLAY_EPISODE_NEXT:
       return state.merge({
-        playlist: addEpisodeNextInQueue(state.playlist, episode)
+        playlist: addEpisodeNextInQueue(state.get('playlist'), episode)
       });
     default:
       return state;

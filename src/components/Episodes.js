@@ -1,4 +1,5 @@
 import React, { Component } from 'react';
+import { connect } from 'react-redux';
 import PropTypes from 'prop-types';
 import Immutable from 'immutable';
 import { fetchEpisodes } from '../actions/Episodes';
@@ -7,8 +8,12 @@ import MuiThemeProvider from 'material-ui/styles/MuiThemeProvider';
 import { deepOrange500 } from 'material-ui/styles/colors';
 import Style from '../Style.js';
 import { Card, CardHeader, CardTitle, CardText } from 'material-ui/Card';
-import { connect } from 'react-redux';
-import Audio from 'react-audioplayer';
+import IconButton from 'material-ui/IconButton';
+import PlayArrow from 'material-ui/svg-icons/av/play-arrow';
+import PlaylistAdd from 'material-ui/svg-icons/av/playlist-add';
+import QueuePlayNext from 'material-ui/svg-icons/av/queue-play-next';
+import FileDownload from 'material-ui/svg-icons/file/file-download';
+import { playEpisode, addToPlaylist, playNext } from '../actions/AudioPlayer';
 
 const muiTheme = getMuiTheme({
   palette: {
@@ -20,20 +25,18 @@ class Episodes extends Component {
   constructor(props, context) {
     super(props, context);
     this.state = { episodes: null };
+    this.renderEpisodeCard = this.renderEpisodeCard.bind(this);
   }
 
   componentDidMount() {
-    const { dispatch, lastUpdated, episodes } = this.props;
+    const { lastUpdated, episodes, handleUpdateEpisodes } = this.props;
     if (lastUpdated <= Date.now() + 300000 || episodes.size <= 0) {
-      dispatch(fetchEpisodes());
+      handleUpdateEpisodes();
     }
   }
 
   renderEpisodeCard(episode) {
-    const songObj = {
-      name: episode.get('title'),
-      src: episode.get('link')
-    };
+    const { handlePlay, handleQueue, handlePlayNext } = this.props;
     return (
       <Card key={episode.get('title')} style={Style.episodeCard}>
         <CardHeader
@@ -47,11 +50,18 @@ class Episodes extends Component {
         <CardText>
           {episode.get('description')}
         </CardText>
-        <Audio
-          playlist={[songObj]}
-          style={Style.episodeAudioPlayer}
-          color="#FF5722"
-        />
+        <IconButton onClick={() => handlePlay(episode)}>
+          <PlayArrow color="black" />
+        </IconButton>
+        <IconButton onClick={() => handlePlayNext(episode)}>
+          <QueuePlayNext color="black" />
+        </IconButton>
+        <IconButton onClick={() => handleQueue(episode)}>
+          <PlaylistAdd color="black" />
+        </IconButton>
+        <IconButton href={episode.get('link')} download>
+          <FileDownload color="black" />
+        </IconButton>
       </Card>
     );
   }
@@ -78,7 +88,11 @@ class Episodes extends Component {
 
 Episodes.propTypes = {
   episodes: PropTypes.instanceOf(Immutable.List).isRequired,
-  lastUpdated: PropTypes.number.isRequired
+  lastUpdated: PropTypes.number.isRequired,
+  handlePlay: PropTypes.func.isRequired,
+  handleQueue: PropTypes.func.isRequired,
+  handlePlayNext: PropTypes.func.isRequired,
+  handleUpdateEpisodes: PropTypes.func.isRequired
 };
 
 const mapStateToProps = state => {
@@ -88,4 +102,21 @@ const mapStateToProps = state => {
   };
 };
 
-export default connect(mapStateToProps)(Episodes);
+const mapDispatchToProps = dispatch => {
+  return {
+    handlePlay: episode => {
+      dispatch(playEpisode(episode));
+    },
+    handleQueue: episode => {
+      dispatch(addToPlaylist(episode));
+    },
+    handlePlayNext: episode => {
+      dispatch(playNext(episode));
+    },
+    handleUpdateEpisodes: () => {
+      dispatch(fetchEpisodes());
+    }
+  };
+};
+
+export default connect(mapStateToProps, mapDispatchToProps)(Episodes);
