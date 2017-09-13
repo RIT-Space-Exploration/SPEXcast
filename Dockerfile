@@ -6,7 +6,10 @@ WORKDIR /usr/src/app
 
 # Install app dependencies
 COPY package.json /usr/src/app/
-RUN npm install && cd react/ && npm install && npm run build && cd ..
+RUN npm install
+RUN cd react/
+RUN npm install
+RUN npm run build
 RUN cd ..
 # Bundle app source
 COPY . /usr/src/app
