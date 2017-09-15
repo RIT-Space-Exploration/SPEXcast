@@ -3,6 +3,7 @@
 # dependencies
 /node_modules
 /react/build
+/react/node_modules
 # testing
 /coverage
 
