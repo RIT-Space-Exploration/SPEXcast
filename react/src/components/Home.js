@@ -16,7 +16,7 @@ class Home extends Component {
   render() {
     return (
       <MuiThemeProvider muiTheme={muiTheme}>
-        <div className="grid">
+        <div>
           <div>
             <h1>Welcome to SPEXcast</h1> <br />
             <h2>
