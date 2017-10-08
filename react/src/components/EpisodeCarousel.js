@@ -3,9 +3,9 @@ import PropTypes from 'prop-types';
 import Immutable from 'immutable';
 import { connect } from 'react-redux';
 import Style from '../Style';
-import { GridList, GridTile } from 'material-ui/GridList';
+import { GridList, GridListTile } from 'material-ui/GridList';
 import IconButton from 'material-ui/IconButton';
-import StarBorder from 'material-ui/svg-icons/toggle/star-border';
+import StarBorder from 'material-ui-icons/StarBorder';
 
 class EpisodeCarousel extends Component {
   render() {
@@ -15,8 +15,8 @@ class EpisodeCarousel extends Component {
       <div style={Style.Carousel}>
         {
           <GridList style={Style.gridList} cols={3}>
-            {episodes.take(3).map(episode =>
-              <GridTile
+            {episodes.take(3).map(episode => (
+              <GridListTile
                 key={episode.get('link')}
                 title={episode.get('title')}
                 actionIcon={
@@ -28,8 +28,8 @@ class EpisodeCarousel extends Component {
                 titleBackground="linear-gradient(to top, rgba(0,0,0,0.7) 0%,rgba(0,0,0,0.3) 70%,rgba(0,0,0,0) 100%)"
               >
                 <img alt="" src={'img/spexcast.png'} />
-              </GridTile>
-            )}
+              </GridListTile>
+            ))}
           </GridList>
         }
       </div>

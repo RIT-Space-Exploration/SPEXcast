@@ -1,13 +1,14 @@
 {
-    "name": "spexcast-server",
-    "version": "1.0.0",
-    "main": "index.js",
-    "license": "MIT",
-    "scripts": {
-        "start": "node index.js",
-        "heroku-postbuild": "cd react && npm install --only=dev && npm install && npm run build"
-    },
-    "dependencies": {
-        "express": "^4.15.4"
-    }
+  "name": "spexcast-server",
+  "version": "1.0.0",
+  "main": "index.js",
+  "license": "MIT",
+  "scripts": {
+    "start": "node index.js",
+    "heroku-postbuild":
+      "cd react && npm install --only=dev && npm install && npm run build"
+  },
+  "dependencies": {
+    "express": "^4.15.4"
+  }
 }

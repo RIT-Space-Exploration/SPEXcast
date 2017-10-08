@@ -1,24 +1,27 @@
 import React, { Component } from 'react';
 import { Link } from 'react-router-dom';
-import { deepOrange500 } from 'material-ui/styles/colors';
-import getMuiTheme from 'material-ui/styles/getMuiTheme';
-import MuiThemeProvider from 'material-ui/styles/MuiThemeProvider';
+import { deepOrange } from 'material-ui/colors';
+import { MuiThemeProvider, createMuiTheme } from 'material-ui/styles';
 import AppBar from 'material-ui/AppBar';
+import Toolbar from 'material-ui/Toolbar';
+import Typography from 'material-ui/Typography';
 import Drawer from 'material-ui/Drawer';
-import MenuItem from 'material-ui/MenuItem';
-import Headset from 'material-ui/svg-icons/hardware/headset';
-import People from 'material-ui/svg-icons/social/people';
-import OpenInNew from 'material-ui/svg-icons/action/open-in-new';
-import Home from 'material-ui/svg-icons/action/home';
-import Toys from 'material-ui/svg-icons/hardware/toys';
+import { MenuItem } from 'material-ui/Menu';
+import Headset from 'material-ui-icons/Headset';
+import People from 'material-ui-icons/People';
+import OpenInNew from 'material-ui-icons/OpenInNew';
+import Home from 'material-ui-icons/Home';
+import Toys from 'material-ui-icons/Toys';
+import IconButton from 'material-ui/IconButton';
+import MenuIcon from 'material-ui-icons/Menu';
 import Style from '../Style.js';
 
-const muiTheme = getMuiTheme({
+const muiTheme = createMuiTheme({
   palette: {
-    accent1Color: deepOrange500,
-    primary1Color: deepOrange500,
-    primary2Color: deepOrange500,
-    primary3Color: deepOrange500
+    accent1Color: deepOrange[500],
+    primary1Color: deepOrange[500],
+    primary2Color: deepOrange[500],
+    primary3Color: deepOrange[500]
   }
 });
 
@@ -36,68 +39,48 @@ class SPEXHeader extends Component {
     });
   }
 
-  handleMenuItemTouch(event) {
-    console.log('Menu Item Touched');
-    console.log(event);
-  }
-  /*
-  renderHeaderTitle() {
-    return (
-      <h4><img alt="" width="192" height="192" src={'img/spexcast.png'} />SPEXcast</h4>
-    );
-  }*/
-
   render() {
     const { open } = this.state;
     return (
       <MuiThemeProvider muiTheme={muiTheme}>
-        <AppBar
-          title="SPEXcast"
-          iconClassNameRight="muidocs-icon-navigation-expand-more"
-          onLeftIconButtonTouchTap={this.handleMenuTouch.bind(this)}
-          style={Style.header}
-        >
-          <Drawer
-            docked={false}
-            open={open}
-            onRequestChange={open => this.setState({ open })}
-          >
-            <MenuItem
-              rightIcon={<Home />}
-              onTouchTap={this.handleMenuItemTouch.bind(this)}
-              containerElement={<Link to="/home" />}
+        <AppBar>
+          <Toolbar>
+            <IconButton
+              color="contrast"
+              aria-label="Menu"
+              onClick={this.handleMenuTouch.bind(this)}
             >
-              Home
-            </MenuItem>
-            <MenuItem
-              rightIcon={<Headset />}
-              onTouchTap={this.handleMenuItemTouch.bind(this)}
-              containerElement={<Link to="/episodes" />}
+              <MenuIcon />
+            </IconButton>
+            <Drawer
+              docked={false}
+              open={open}
+              onRequestChange={open => this.setState({ open })}
             >
-              Episodes
-            </MenuItem>
-            <MenuItem
-              rightIcon={<People />}
-              onTouchTap={this.handleMenuItemTouch.bind(this)}
-              containerElement={<Link to="/about" />}
-            >
-              About Us
-            </MenuItem>
-            <MenuItem
-              rightIcon={<Toys />}
-              onTouchTap={this.handleMenuItemTouch.bind(this)}
-              containerElement={<Link to="/soundboard" />}
-            >
-              Soundboard
-            </MenuItem>
-            <MenuItem
-              rightIcon={<OpenInNew />}
-              onTouchTap={this.handleMenuItemTouch.bind(this)}
-              href={'http://spex.rit.edu/'}
-            >
-              SPEX Website
-            </MenuItem>
-          </Drawer>
+              <MenuItem containerElement={<Link to="/home" />}>
+                {<Home />}
+                Home
+              </MenuItem>
+              <MenuItem containerElement={<Link to="/episodes" />}>
+                {<Headset />}
+                Episodes
+              </MenuItem>
+              <MenuItem containerElement={<Link to="/about" />}>
+                {<People />}
+                About Us
+              </MenuItem>
+              <MenuItem containerElement={<Link to="/soundboard" />}>
+                {<Toys />}
+                Soundboard
+              </MenuItem>
+              <MenuItem href={'http://spex.rit.edu/'}>
+                {<OpenInNew />}SPEX Website
+              </MenuItem>
+            </Drawer>
+            <Typography type="title" color="inherit">
+              SPEXcast
+            </Typography>
+          </Toolbar>
         </AppBar>
       </MuiThemeProvider>
     );

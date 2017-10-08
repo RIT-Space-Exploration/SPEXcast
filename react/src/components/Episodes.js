@@ -3,21 +3,20 @@ import { connect } from 'react-redux';
 import PropTypes from 'prop-types';
 import Immutable from 'immutable';
 import { fetchEpisodes } from '../actions/Episodes';
-import getMuiTheme from 'material-ui/styles/getMuiTheme';
-import MuiThemeProvider from 'material-ui/styles/MuiThemeProvider';
-import { deepOrange500 } from 'material-ui/styles/colors';
+import { MuiThemeProvider, createMuiTheme } from 'material-ui/styles';
+import { deepOrange } from 'material-ui/colors';
 import Style from '../Style.js';
 import { Card, CardHeader, CardTitle, CardText } from 'material-ui/Card';
 import IconButton from 'material-ui/IconButton';
-import PlayArrow from 'material-ui/svg-icons/av/play-arrow';
-import PlaylistAdd from 'material-ui/svg-icons/av/playlist-add';
-import QueuePlayNext from 'material-ui/svg-icons/av/queue-play-next';
-import FileDownload from 'material-ui/svg-icons/file/file-download';
+import PlayArrow from 'material-ui-icons/PlayArrow';
+import PlaylistAdd from 'material-ui-icons/PlaylistAdd';
+import QueuePlayNext from 'material-ui-icons/QueuePlayNext';
+import FileDownload from 'material-ui-icons/FileDownload';
 import { playEpisode, addToPlaylist, playNext } from '../actions/AudioPlayer';
 
-const muiTheme = getMuiTheme({
+const muiTheme = createMuiTheme({
   palette: {
-    primary1Color: deepOrange500
+    primary1Color: deepOrange[500]
   }
 });
 
@@ -47,9 +46,7 @@ class Episodes extends Component {
           title={episode.get('title')}
           subtitle={episode.get('subtitle')}
         />
-        <CardText>
-          {episode.get('description')}
-        </CardText>
+        <CardText>{episode.get('description')}</CardText>
         <IconButton onClick={() => handlePlay(episode)}>
           <PlayArrow color="black" />
         </IconButton>

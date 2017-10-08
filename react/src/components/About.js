@@ -1,7 +1,6 @@
 import React, { Component } from 'react';
-import getMuiTheme from 'material-ui/styles/getMuiTheme';
-import MuiThemeProvider from 'material-ui/styles/MuiThemeProvider';
-import { deepOrange500 } from 'material-ui/styles/colors';
+import { MuiThemeProvider, createMuiTheme } from 'material-ui/styles';
+import { deepOrange } from 'material-ui/colors';
 import Style from '../Style.js';
 import Team from '../utils/Team.js';
 import {
@@ -12,9 +11,9 @@ import {
   CardText
 } from 'material-ui/Card';
 
-const muiTheme = getMuiTheme({
+const muiTheme = createMuiTheme({
   palette: {
-    primary1Color: deepOrange500
+    primary1Color: deepOrange[500]
   }
 });
 
@@ -32,7 +31,7 @@ class About extends Component {
             We are a group of passionate space fans from Rochester Institute of
             Technology
           </h2>
-          {Team.map(host =>
+          {Team.map(host => (
             <Card key={host.name}>
               <CardHeader
                 title={host.name}
@@ -52,11 +51,9 @@ class About extends Component {
                 <img alt="" src={`img/${host.spacecraftImg}`} />
               </CardMedia>
               <CardTitle title={host.name} subtitle={host.major} />
-              <CardText>
-                {host.bio}
-              </CardText>
+              <CardText>{host.bio}</CardText>
             </Card>
-          )}
+          ))}
         </div>
       </MuiThemeProvider>
     );

@@ -1,17 +1,16 @@
 import React, { Component } from 'react';
-import { deepOrange500 } from 'material-ui/styles/colors';
-import getMuiTheme from 'material-ui/styles/getMuiTheme';
-import MuiThemeProvider from 'material-ui/styles/MuiThemeProvider';
+import { deepOrange } from 'material-ui/colors';
+import { MuiThemeProvider, createMuiTheme } from 'material-ui/styles';
 import { GridList, GridTile } from 'material-ui/GridList';
 import IconButton from 'material-ui/IconButton';
-import Subheader from 'material-ui/Subheader';
-import FileDownload from 'material-ui/svg-icons/file/file-download';
+import Subheader from 'material-ui/List/ListSubheader';
+import FileDownload from 'material-ui-icons/FileDownload';
 import audioFiles from '../utils/AudioFiles.js';
 import Style from '../Style.js';
 
-const muiTheme = getMuiTheme({
+const muiTheme = createMuiTheme({
   palette: {
-    accent1Color: deepOrange500
+    accent1Color: deepOrange[500]
   }
 });
 
@@ -85,7 +84,7 @@ class Soundboard extends Component {
         <div style={Style.container}>
           <GridList cellHeight={250} style={Style.gridList} cols={columnCount}>
             <Subheader>Click below to play</Subheader>
-            {audioFiles.map(soundbite =>
+            {audioFiles.map(soundbite => (
               <GridTile
                 key={soundbite.fileName}
                 title={soundbite.name}
@@ -101,7 +100,7 @@ class Soundboard extends Component {
               >
                 <img alt="" src={'img/spexcast.png'} />
               </GridTile>
-            )}
+            ))}
           </GridList>
         </div>
       </MuiThemeProvider>

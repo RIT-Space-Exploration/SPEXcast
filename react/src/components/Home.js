@@ -1,14 +1,13 @@
 import React, { Component } from 'react';
 import { Timeline } from 'react-twitter-widgets';
 import EpisodeCarousel from './EpisodeCarousel';
-import getMuiTheme from 'material-ui/styles/getMuiTheme';
-import MuiThemeProvider from 'material-ui/styles/MuiThemeProvider';
-import { deepOrange500 } from 'material-ui/styles/colors';
+import { MuiThemeProvider, createMuiTheme } from 'material-ui/styles';
+import { deepOrange } from 'material-ui/colors';
 import Style from '../Style.js';
 
-const muiTheme = getMuiTheme({
+const muiTheme = createMuiTheme({
   palette: {
-    primary1Color: deepOrange500
+    primary1Color: deepOrange[500]
   }
 });
 
